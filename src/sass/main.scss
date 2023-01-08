@@ -1,0 +1,33 @@
+@import "abstracts/variables";
+@import "components/typing";
+@import "components/header";
+@import "components/hero";
+@import "base/layout";
+@import "base/base";
+
+//fonts
+
+@font-face {
+    font-family: Biotif-Regular;
+    src: url(../fonts/Biotif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Biotif-Medium;
+    src: url(../fonts/Biotif-Medium.ttf);
+}
+
+@font-face {
+    font-family: Biotif-Bold;
+    src: url(../fonts/Biotif-Book.ttf);
+}
+
+@font-face {
+    font-family: Biotif-Italic;
+    src: url(../fonts/Biotif-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: Biotif-ItalicBold;
+    src: url(../fonts/Biotif-BoldItalic.ttf);
+}
