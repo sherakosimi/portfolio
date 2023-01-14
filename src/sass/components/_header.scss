@@ -1,10 +1,19 @@
-
 .header{
-    margin: 20px 5%; 
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
     font-size: 1.9rem;
     background: $primary-color;
     position: fixed;
-    width: 90%;
+    width: 90vw;
     height: 10rem;
     z-index: 1000;
     display: flex;
@@ -14,27 +23,22 @@
     -22px -22px 46px $box-shadow-two;
     border-radius: 25px;
     overflow: hidden;
-}
-
-.navbar{
-    max-width: 165rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    animation-name:fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease
 } 
 
-.nav{
+.nav-list{
+    flex:1;
     height: 100%;
-    flex: 1;
     display:flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content:space-evenly;
+    
 
 
-    &__box{
+    &__item{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,7 +52,13 @@
     }
 
     &__title{
-        color: white;
+
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: white;
+        }
+        
     }
     
 }
@@ -59,6 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing:content-box;
 
     &__flame{
         margin-top: 1.5rem;
@@ -91,7 +102,7 @@
             display:block;
             position:absolute;
             background:linear-gradient(-45deg, red, orange);
-            animation:.2s flame infinite;
+            animation:.3s flame infinite;
             transform:scale(.9) rotate(20deg);
             border-radius: 4rem 4rem 0px 4rem;
             top:1px
@@ -111,9 +122,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap:4rem;
     font-size: 2.1rem;;
     color: white;
+
+    &__container{
+        margin-right: 3rem;
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
    
 
     &__icon-wrapper{
@@ -135,12 +153,97 @@
 }
 
 
+.hero{
+    flex:1;
+    overflow: hidden;
+    z-index: 100;
+    padding-top: 11rem;
+    
+    &__box{
+        max-width: 140rem;
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        justify-content:center;
+        margin: 0 auto;
+       
+
+    }
+    &__box--intro{
+        flex:1;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        animation-name:moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &__box--title{
+        color: #fff;
+        background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+        background-clip: text;    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Biotif-Bold;
+        font-size: 10rem;
+        letter-spacing: -0.17rem;
+        line-height: 110%;
+        user-select: none;
+        -webkit-user-select: none; /*Safari*/
+        -moz-user-select: none;
+      
+    }
 
 
+    &__box--subtitle{
+        max-width: 90%;
+        padding: 2rem 0.3rem;
+        color: #fff;
+        line-height: 4rem;
+        font-family: Biotif-Bold;
+        font-size: 2.2rem;
+    }
 
-@keyframes flame{
-  0% {height:3rem; width:3rem;}
-  50% {height:2.7rem; width:2.7rem;}
-  100% {height:3rem; width:3rem;}
+    &__box--image{
+        flex:1;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name:fadeIn;
+        animation-duration: 2s;
+        animation-timing-function: ease
+    }
+
+    &__image{
+        width: 93%;
+        height: 93%;
+        border-radius: 33px;
+    }
+
+    &__image--container{
+        height: 55rem;
+        width: 55rem;
+        border-radius: 40px;
+        background:#292D32 ;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        box-shadow:  38px 38px 77px $box-shadow-one,
+        -38px -38px 77px $box-shadow-two;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+        transform: scale(1) translateY(-.2rem) translateX(-.2rem);
+        box-shadow: inset 38px 38px 77px $box-shadow-one,
+        inset -38px -38px 77px $box-shadow-two;
+        }
+    }
 }
+
+
+
 
