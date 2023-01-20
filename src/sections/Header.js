@@ -12,12 +12,12 @@ export default function Header() {
             </a>
           </li>
           <li className="nav-list__item">
-            <a href="hero" className="nav-list__title">
+            <a href="#work" className="nav-list__title">
               <span>Work</span>
             </a>
           </li>
           <li className="nav-list__item">
-            <a href="hero" className="nav-list__title">
+            <a href="#about" className="nav-list__title">
               <span>About</span>
             </a>
           </li>
@@ -27,8 +27,10 @@ export default function Header() {
             </a>
           </li>
         </ul>
-        <div className="logo">
-          <div className="logo__flame"></div>
+        <div className="logo-container">
+          <div className="logo-container__background">
+            <div className="flame"></div>
+          </div>
         </div>
         <div className="social">
           <div className="social__container">

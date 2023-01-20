@@ -3,6 +3,8 @@
 @import "components/header";
 @import "base/base";
 @import "base/animations";
+@import "base/utilities";
+@import "base/typography";
 @import "pages/home";
 
 
@@ -20,7 +22,7 @@
 
 @font-face {
     font-family: Biotif-Bold;
-    src: url(../fonts/Biotif-Book.ttf);
+    src: url(../fonts/Biotif-Bold.ttf);
 }
 
 @font-face {
