@@ -1,7 +1,7 @@
 .heading-secondary {
     color: $secondary-color;
     display: block;
-    font-family: Biotif-ItalicBold;
+    font-family: Biotif-Regular;
     font-size: 2rem;
     letter-spacing: .2rem;
     line-height: 160%;
@@ -12,9 +12,12 @@
 
 
 .heading-tertiary {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     color: rgb(205, 204, 204);
     display: block;
     letter-spacing: .2rem;
     font-family: Biotif-Medium;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none;
 }
