@@ -2,6 +2,7 @@
 @import "components/typing";
 @import "components/header";
 @import "components/projects";
+@import "components/work";
 @import "base/base";
 @import "base/animations";
 @import "base/utilities";
@@ -34,4 +35,15 @@
 @font-face {
     font-family: Biotif-ItalicBold;
     src: url(../fonts/Biotif-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
 }

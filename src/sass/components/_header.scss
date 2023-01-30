@@ -46,6 +46,7 @@
         height: 100%;
         padding: 0rem 2rem;
         cursor: pointer;
+        transition: all 0.5s;
 
         &:hover {
             box-shadow: inset 0 -4px 0 0 $secondary-color; 
@@ -73,6 +74,7 @@
     box-sizing:content-box;
 
     &__background{
+        border:1px solid $border-color;
         overflow: hidden;
         height:7rem;
         width: 7rem;
@@ -155,6 +157,7 @@
         height:4rem;
         width: 4rem;
         border-radius: 50px;
+        border:1px solid $border-color;
         background: $primary-color;
         box-shadow:  14px 14px 22px #1b1e21,
              -14px -14px 22px #373c43;
@@ -236,6 +239,7 @@
         width: 93%;
         height: 93%;
         border-radius: 33px;
+        
     }
 
     &__image--container{

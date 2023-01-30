@@ -39,25 +39,54 @@
     }
 }
 
-
-@keyframes flame{
-    0% {height:2rem; width:2rem;}
-    50% {height:1.7rem; width:1.7rem;}
-    100% {height:2rem; width:2rem;}
-  }
-  
-  @keyframes cardPocket {
+@keyframes flame {
     0% {
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+        height: 2rem;
+        width: 2rem;
     }
     50% {
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+        height: 1.7rem;
+        width: 1.7rem;
     }
     100% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        height: 2rem;
+        width: 2rem;
     }
 }
-  
+
+@keyframes cards {
+    0% {
+        background-color: antiquewhite;
+    }
+    30% {
+        background-color: antiquewhite;
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        background-image: url("../../img/plant.jpg");
+
+        background-size: cover;
+    }
+}
+
+@keyframes work {
+    0% {
+        height: calc(100% + 2rem);
+    }
+
+    100% {
+        height: calc(100% + 13rem);
+    }
+}
+
+@keyframes tools {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

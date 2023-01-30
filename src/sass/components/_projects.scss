@@ -1,65 +1,171 @@
-
-
-
-.projects{
+.projects {
     height: 100%;
     width: 100%;
     border-radius: 50px;
-    background: #292D32;
-    box-shadow: inset 33px 33px 70px #202428,
-    inset -33px -33px 70px #32363d;
+    background: #292d32;
+    border: 2px solid $border-color;
+    box-shadow: inset 33px 33px 70px #202428, inset -33px -33px 70px #32363d;
     padding: 5rem 5rem;
 
-    &__flexbox{
+    &__flexbox {
         width: 100%;
         height: 90%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-       
     }
-    &__card{
-        width: 27rem;
-        border-radius: 2rem;
-        height: 45rem;
-        background: linear-gradient(145deg, #25292d, #2c3036);
-        box-shadow:  16px 16px 36px #202327,
-        -16px -16px 36px #32373d;
-        padding:2rem 2rem;
-        border:1px solid $border-color;
-    }
+}
 
-    &__card-container{
+.card {
+    width: 27rem;
+    border-radius: 2rem;
+    height: 45rem;
+    background: linear-gradient(145deg, #25292d, #2c3036);
+    box-shadow: 16px 16px 36px #202327, -16px -16px 36px #32373d;
+    padding: 2rem 2rem;
+    border: 1px solid $border-color;
+    position: relative;
+
+    &__top {
+        z-index: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         width: 100%;
-        height: 80%;
-        background-color: #85FFBD;
-        background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+        height: 32rem;
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0 90%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 90%);
         transition: all 0.4s;
-
-        :hover > & {
-            transform: translateY(-5rem);
-            height: calc(80% + 5rem)
-          }
-    
     }
 
-
-    &__card-title{
-        font-size: 3rem;
-        color: rgb(205, 204, 204);
-        font-family: Biotif-Regular;
+    &:hover > &__top {
+        transform: translateY(-5rem);
+        height: calc(80% + 5rem);
+        animation-name: cards;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
     }
 
-    &__card-subtitle{
-        font-size: 1.5rem;
-        color: rgb(205, 204, 204);
-        font-family: Biotif-Italic;
+    &__description {
+        font-size: 1.4rem;
+        font-family: Biotif-Medium;
+        text-align: start;
+        color: black;
+        text-transform: uppercase;
     }
 
-    
+    &__list {
+        margin-top: 1.5rem;
+        text-align: start;
+        list-style: none;
+        font-size: 1.4rem;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 10px 0;
+            font-family: Lato-Bold;
+        }
+
+        &--icon {
+            font-size: 3rem;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        top: 34rem;
+        left: 2rem;
+        display: flex;
+        width: 23rem;
+        justify-content: center;
+        align-items: center;
+        height: 6.2rem;
+    }
+
+    &__title {
+        flex: 1.3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 5.7rem;
+        //background-color: #85ffbe;
+        &--name {
+            font-size: 2.9rem;
+            color: rgb(205, 204, 204);
+            font-family: Biotif-Regular;
+        }
+
+        &--platform {
+            font-size: 1.3rem;
+            color: rgb(205, 204, 204);
+            font-family: Biotif-Italic;
+            text-transform: uppercase;
+        }
+    }
+
+    &__more {
+        height: 100%;
+
+        flex: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--btn {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50px;
+            background: $primary-color;
+            box-shadow: 14px 14px 22px #1b1e21, -14px -14px 22px #373c43;
+            border: 1px solid $border-color;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                box-shadow: inset 8px 8px 16px $box-shadow-one, inset -8px -8px 16px $box-shadow-two;
+            }
+        }
+    }
+}
+
+#mobile {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(45deg, #85ffbe 0%, #fffb7d 100%);
+}
+
+#react {
+    color: rgb(9, 98, 242);
+}
+#redux {
+    color: #00a7e5;
+}
+
+#figma {
+    color: rgb(197, 43, 197);
+}
+
+#aws {
+    color: rgb(3, 35, 87);
+}
+
+#sass {
+    color: rgb(255, 92, 255);
+}
+
+#html5 {
+    color: rgb(227, 76, 38);
+}
+
+#firebase {
+    color: #f5820d;
+}
+
+#web {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(45deg, #85ffbe 0%, #fffb7d 100%);
 }
