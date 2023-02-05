@@ -60,12 +60,12 @@ export default function Work() {
             </div>
             <h2 className="item__responsibility">Tools & Responsibilites</h2>
             <ul className="item__tools">
-              <li className="item__tools--item">JavaScript</li>
-              <li className="item__tools--item">Oracle Netsuite</li>
-              <li className="item__tools--item">Oracle Open Air</li>
-              <li className="item__tools--item">Python</li>
-              <li className="item__tools--item">Excel</li>
-              <li className="item__tools--item">Redux</li>
+              <li className="item__tools--item">Java</li>
+              <li className="item__tools--item">Selenium Testing</li>
+              <li className="item__tools--item">Jenkins</li>
+              <li className="item__tools--item">Jira (Agile)</li>
+              <li className="item__tools--item">AWS</li>
+              <li className="item__tools--item">HTML</li>
             </ul>
           </div>
           <div className="item item--c">
@@ -87,11 +87,11 @@ export default function Work() {
             </div>
             <h2 className="item__responsibility">Tools & Responsibilites</h2>
             <ul className="item__tools">
+              <li className="item__tools--item">React Native</li>
+              <li className="item__tools--item">React JS</li>
               <li className="item__tools--item">JavaScript</li>
-              <li className="item__tools--item">Oracle Netsuite</li>
-              <li className="item__tools--item">Oracle Open Air</li>
-              <li className="item__tools--item">Python</li>
-              <li className="item__tools--item">Excel</li>
+              <li className="item__tools--item">Firebase</li>
+              <li className="item__tools--item">Figma (UI/UX)</li>
               <li className="item__tools--item">Redux</li>
             </ul>
           </div>

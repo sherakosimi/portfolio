@@ -66,7 +66,6 @@
     100% {
         opacity: 1;
         background-image: url("../../img/plant.jpg");
-
         background-size: cover;
     }
 }
@@ -88,5 +87,94 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes moveInUpTitle {
+    0% {
+        opacity: 0;
+        font-size: 1.4rem;
+        position: relative;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 1.4rem;
+        transform: translateY(0rem);
+        height: 2rem;
+    }
+}
+
+@keyframes moveOutUpTitle {
+    0% {
+        opacity: 1;
+        position: relative;
+        transform: translateY(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-5rem);
+        height: 0;
+    }
+}
+
+@keyframes moveInUpList {
+    0% {
+        opacity: 0;
+        font-size: 1.4rem;
+        position: relative;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 1.4rem;
+        transform: translateY(0rem);
+        margin: 7px 0;
+        //margin-bottom: 30px 0;
+    }
+}
+
+@keyframes moveOutUpList {
+    0% {
+        opacity: 1;
+        position: relative;
+        transform: translateY(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-5rem);
+        height: 0;
+    }
+}
+
+@keyframes moveInUpIcon {
+    0% {
+        font-size: 3rem;
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    100% {
+        font-size: 3rem;
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes moveOutUpIcon {
+    0% {
+        opacity: 1;
+        transform: translateY(0rem);
+        font-size: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-5rem);
+        height: 0;
     }
 }

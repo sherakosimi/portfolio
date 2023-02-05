@@ -11,37 +11,60 @@ export default function Projects() {
         <div className="projects__flexbox">
           <div className="card">
             <div className="card__top" id="web">
-              <h3 className="card__description">Full Stack & UI/UX Case</h3>
+              <h3 className="card__description card__description--front">
+                Front-end & UI/UX Case
+              </h3>
+              <h3 className="card__description card__description--back">
+                Features & Tools
+              </h3>
               <ul className="card__list">
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item card__item--front">
+                  <span className="card__icon card__icon--front">
                     <i class="bx bxl-react" id="react"></i>
                   </span>
                   React Native
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item card__item--back">
+                  <span className="card__icon card__icon--back">
                     <i class="bx bxl-redux" id="redux"></i>
                   </span>
-                  Redux-Saga - AJAX
+                  JWT Authorization
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item card__item--front">
+                  <span className="card__icon card__icon--front">
                     <i class="bx bxl-aws" id="aws"></i>
                   </span>
                   AWS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item card__item--back">
+                  <span className="card__icon card__icon--back">
+                    <i class="bx bxl-redux" id="redux"></i>
+                  </span>
+                  AJAX HTTP Requests
+                </li>
+                <li className="card__item card__item--front">
+                  <span className="card__icon card__icon--front">
                     <i class="bx bxl-figma" id="figma"></i>
                   </span>
-                  Figma
+                  Neomorphism Design
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item card__item--back">
+                  <span className="card__icon card__icon--back">
+                    <i class="bx bxl-redux" id="redux"></i>
+                  </span>
+                  Redux-Saga - AJAX
+                </li>
+                <li className="card__item card__item--front">
+                  <span className="card__icon card__icon--front">
                     <i class="bx bxl-react"></i>
                   </span>
                   REST API
+                </li>
+                <li className="card__item card__item--back">
+                  <span className="card__icon card__icon--back">
+                    <i class="bx bxl-redux" id="redux"></i>
+                  </span>
+                  Redux-Saga - AJAX
                 </li>
               </ul>
             </div>
@@ -51,40 +74,47 @@ export default function Projects() {
                 <h2 className="card__title--platform">Web App</h2>
               </div>
               <div className="card__more">
-                <button className="card__more--btn"></button>
+                <button className="card__more--btn">
+                  <i class="bx bx-spa"></i>
+                </button>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__top" id="mobile">
-              <h3 className="card__description">Front-End & UI/UX Case</h3>
+              <h3 className="card__description card__description--front">
+                Front-end & UI/UX Case
+              </h3>
+              <h3 className="card__description card__description--back">
+                Development Stack
+              </h3>
               <ul className="card__list">
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react" id="react"></i>
                   </span>
                   React JS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-html5" id="html5"></i>
                   </span>
                   HTML
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-sass" id="sass"></i>
                   </span>
                   SASS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-figma" id="figma"></i>
                   </span>
                   Figma
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react"></i>
                   </span>
                   REST API
@@ -97,43 +127,50 @@ export default function Projects() {
                 <h2 className="card__title--platform">Web App</h2>
               </div>
               <div className="card__more">
-                <button className="card__more--btn"></button>
+                <button className="card__more--btn">
+                  <i class="bx bx-map-pin"></i>
+                </button>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__top" id="web">
-              <h3 className="card__description">Front-End & UI/UX Case</h3>
+              <h3 className="card__description card__description--front">
+                Full Stack & UI/UX Case
+              </h3>
+              <h3 className="card__description card__description--back">
+                Development Stack
+              </h3>
               <ul className="card__list">
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react" id="react"></i>
                   </span>
                   React JS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-html5" id="redux"></i>
                   </span>
                   HTML
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-sass" id="sass"></i>
                   </span>
-                  SASS
+                  Styled-Components
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
+                    <i class="bx bxl-firebase" id="firebase"></i>
+                  </span>
+                  Firebase
+                </li>
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-figma" id="figma"></i>
                   </span>
                   Figma
-                </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
-                    <i class="bx bxl-react"></i>
-                  </span>
-                  REST API
                 </li>
               </ul>
             </div>
@@ -143,40 +180,47 @@ export default function Projects() {
                 <h2 className="card__title--platform">Web App</h2>
               </div>
               <div className="card__more">
-                <button className="card__more--btn"></button>
+                <button className="card__more--btn">
+                  <i class="bx bx-bitcoin"></i>
+                </button>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__top" id="mobile">
-              <h3 className="card__description">Full Stack & UI/UX Case</h3>
+              <h3 className="card__description card__description--front">
+                Full Stack & UI/UX Case
+              </h3>
+              <h3 className="card__description card__description--back">
+                Development Stack
+              </h3>
               <ul className="card__list">
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react" id="react"></i>
                   </span>
                   React Native
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-redux" id="redux"></i>
                   </span>
                   Redux Thunk
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-firebase" id="firebase"></i>
                   </span>
                   Firebase
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-figma" id="figma"></i>
                   </span>
                   Figma
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react"></i>
                   </span>
                   Expo
@@ -189,43 +233,50 @@ export default function Projects() {
                 <h2 className="card__title--platform">Mobile App</h2>
               </div>
               <div className="card__more">
-                <button className="card__more--btn"></button>
+                <button className="card__more--btn">
+                  <i class="bx bx-task"></i>
+                </button>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__top" id="web">
-              <h3 className="card__description">Front-End & UI/UX Case</h3>
+              <h3 className="card__description card__description--front">
+                Front-end & UI/UX Case
+              </h3>
+              <h3 className="card__description card__description--back">
+                Development Stack
+              </h3>
               <ul className="card__list">
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react" id="react"></i>
                   </span>
-                  React Native
+                  React JS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
-                    <i class="bx bxl-redux" id="redux"></i>
+                <li className="card__item">
+                  <span className="card__icon">
+                    <i class="bx bxl-sass" id="sass"></i>
                   </span>
-                  Redux-Saga - AJAX
+                  SASS
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
-                    <i class="bx bxl-aws" id="aws"></i>
+                <li className="card__item">
+                  <span className="card__icon">
+                    <i class="bx bxl-html5" id="redux"></i>
                   </span>
-                  AWS
+                  HTML
                 </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
-                    <i class="bx bxl-figma" id="figma"></i>
-                  </span>
-                  Figma
-                </li>
-                <li className="card__list--item">
-                  <span className="card__list--icon">
+                <li className="card__item">
+                  <span className="card__icon">
                     <i class="bx bxl-react"></i>
                   </span>
                   REST API
+                </li>
+                <li className="card__item">
+                  <span className="card__icon">
+                    <i class="bx bxl-redux" id="redux"></i>
+                  </span>
+                  Redux Thunk
                 </li>
               </ul>
             </div>
@@ -235,7 +286,9 @@ export default function Projects() {
                 <h2 className="card__title--platform">Web App</h2>
               </div>
               <div className="card__more">
-                <button className="card__more--btn"></button>
+                <button className="card__more--btn">
+                  <i class="bx bx-code-alt"></i>
+                </button>
               </div>
             </div>
           </div>
