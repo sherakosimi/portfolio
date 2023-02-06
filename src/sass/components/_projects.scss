@@ -92,8 +92,8 @@
     &__item {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        margin: 7px 0;
+        gap: 1.2rem;
+        margin: 2px 0;
         font-family: Lato-Bold;
         transition: all 0.4s;
 
@@ -122,8 +122,10 @@
     }
 
     &__icon {
+        width: 3.5rem;
         font-size: 3rem;
         transition: all 0.4s;
+        text-align: center;
 
         &--back {
             font-size: 0rem;
