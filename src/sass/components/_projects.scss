@@ -33,6 +33,8 @@
         width: 100%;
         height: 32rem;
         padding: 2rem;
+        background-color: #8bc6ec;
+        background-image: linear-gradient(80deg, #fffb7d 0%, #aced81 90%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
         transition: all 0.4s;
@@ -123,7 +125,7 @@
 
     &__icon {
         width: 3.5rem;
-        font-size: 3rem;
+        font-size: 2.9rem;
         transition: all 0.4s;
         text-align: center;
 
@@ -213,42 +215,4 @@
             }
         }
     }
-}
-
-#mobile {
-    filter: blur(0px);
-    background-color: #8bc6ec;
-    background-image: linear-gradient(80deg, #fffb7d 0%, #aced81 90%);
-}
-
-#react {
-    color: rgb(9, 98, 242);
-}
-#redux {
-    color: #00a7e5;
-}
-
-#figma {
-    color: rgb(197, 43, 197);
-}
-
-#aws {
-    color: rgb(3, 35, 87);
-}
-
-#sass {
-    color: rgb(255, 92, 255);
-}
-
-#html5 {
-    color: rgb(227, 76, 38);
-}
-
-#firebase {
-    color: #f5820d;
-}
-
-#web {
-    background-color: #8bc6ec;
-    background-image: linear-gradient(80deg, #aced81 0%, #fffb7d 90%);
 }

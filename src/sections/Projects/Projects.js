@@ -17,7 +17,7 @@ export default function Projects() {
                   {project.caseName}
                 </h3>
                 <h3 className="card__description card__description--back">
-                  Features & Tools
+                  Features Overview
                 </h3>
                 <ul className="card__list">
                   {project.techStack.map((item, k) => (
