@@ -1,8 +1,10 @@
 @import "abstracts/variables";
-@import "components/typing";
-@import "components/header";
-@import "components/projects";
-@import "components/work";
+@import "sections/typing";
+@import "sections/header";
+@import "sections/projects";
+@import "sections/about";
+@import "sections/work";
+@import "sections/footer";
 @import "base/base";
 @import "base/animations";
 @import "base/utilities";
@@ -47,6 +49,15 @@
 @font-face {
     font-family: Lato-Regular;
     src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url(../fonts/Lato-LightItalic.ttf);
 }
 
 @font-face {

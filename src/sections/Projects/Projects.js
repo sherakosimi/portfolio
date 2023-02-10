@@ -43,6 +43,7 @@ export default function Projects() {
                     </>
                   ))}
                 </ul>
+                <h2 className="card__date">{project.date}</h2>
               </div>
               <div className="card__bottom">
                 <div className="card__title">
@@ -51,7 +52,7 @@ export default function Projects() {
                 </div>
                 <div className="card__more">
                   <button className="card__more--btn">
-                    <i class="bx bx-spa"></i>
+                    <i class={project.btnIcon}></i>
                   </button>
                 </div>
               </div>

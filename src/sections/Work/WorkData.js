@@ -1,6 +1,6 @@
 const OnePacific = {
-  name: "One Pacific LTD",
-  location: "Hong-Kong",
+  name: "One Pacific",
+  location: "Hong-Kong, HK",
   position: "Data Analyst",
   date: "05/2019 - 08/2019",
   tools: [

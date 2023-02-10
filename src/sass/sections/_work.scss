@@ -25,6 +25,8 @@
     flex-direction: column;
     padding: 1.5rem 2.5rem;
     transition: all 0.6s;
+    color: $color-white;
+    overflow: hidden;
 
     &--a {
         z-index: 100;
@@ -87,12 +89,10 @@
         align-items: flex-end;
         &--company {
             font-family: Lato-Bold;
-            color: $color-white;
             font-size: 2.5rem;
         }
         &--location {
             font-family: Lato-Regular;
-            color: $color-white;
             font-size: 1.7rem;
         }
     }
@@ -105,13 +105,11 @@
 
         &--name {
             font-family: Lato-Regular;
-            color: $color-white;
             font-size: 1.8rem;
         }
 
         &--date {
             font-family: Lato-Regular;
-            color: $color-white;
             font-size: 1.4rem;
         }
     }

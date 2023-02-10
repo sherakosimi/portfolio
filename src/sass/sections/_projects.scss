@@ -148,6 +148,21 @@
         -webkit-animation-fill-mode: forwards;
     }
 
+    &__date {
+        width: 100%;
+        padding: 0 0.5rem;
+        text-align: start;
+        margin-top: 2.1rem;
+        font-family: Biotif-Italic;
+        font-size: 1.1rem;
+        color: #898a89;
+        opacity: 0;
+        transition: all;
+        transition: opacity 0.3s 0.4s;
+    }
+    &:hover &__date {
+        opacity: 1;
+    }
     &__bottom {
         position: absolute;
         top: 34rem;
@@ -202,7 +217,7 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 3rem;
-                color: $secondary-color;
+                color: $tertiary-color;
             }
 
             &:active {
