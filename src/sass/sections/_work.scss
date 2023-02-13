@@ -4,16 +4,26 @@
     border-radius: 50px;
     background: #292d32;
     box-shadow: inset 33px 33px 70px #202428, inset -33px -33px 70px #32363d;
-    padding: 5rem 5rem;
+    padding: 6rem 6rem;
     border: 2px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    align-items: flex-end;
+    height: 85%;
+    width: 100%;
 }
 
 .grid {
-    gap: 1.5rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 35rem 35rem 35rem 35rem;
     grid-template-rows: 12rem 12rem 12rem 12rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .item {

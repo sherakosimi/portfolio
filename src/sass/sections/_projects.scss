@@ -5,14 +5,19 @@
     background: #292d32;
     border: 2px solid $border-color;
     box-shadow: inset 33px 33px 70px #202428, inset -33px -33px 70px #32363d;
-    padding: 5rem 5rem;
+    padding: 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__flexbox {
+        // background-color: #2c3036;
         width: 100%;
-        height: 90%;
+        height: 85%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-end;
+        //background-color: #32373d;
     }
 }
 

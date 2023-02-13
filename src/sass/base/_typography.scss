@@ -1,23 +1,27 @@
-.heading-secondary {
-    color: $secondary-color;
-    display: block;
-    font-family: Biotif-Regular;
-    font-size: 2rem;
-    letter-spacing: .2rem;
-    line-height: 160%;
-    user-select: none;
-    -webkit-user-select: none; /*Safari*/
-    -moz-user-select: none;
-}
+.heading {
+    align-self: flex-start;
+    height: 15%;
 
+    &__secondary {
+        color: $secondary-color;
+        display: block;
+        font-family: Biotif-Regular;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 160%;
+        user-select: none;
+        -webkit-user-select: none; /*Safari*/
+        -moz-user-select: none;
+    }
 
-.heading-tertiary {
-    font-size: 5.5rem;
-    color: $color-white;
-    display: block;
-    letter-spacing: .2rem;
-    font-family: Biotif-Medium;
-    user-select: none;
-    -webkit-user-select: none; /*Safari*/
-    -moz-user-select: none;
+    &__tertiary {
+        font-size: 5.5rem;
+        color: $color-white;
+        display: block;
+        letter-spacing: 0.2rem;
+        font-family: Biotif-Medium;
+        user-select: none;
+        -webkit-user-select: none; /*Safari*/
+        -moz-user-select: none;
+    }
 }

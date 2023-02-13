@@ -5,9 +5,9 @@ export default function Projects() {
   return (
     <section id="projects" className="section-projects">
       <div className="projects">
-        <div>
-          <h2 className="heading-secondary">Personal</h2>
-          <h2 className="heading-tertiary">Projects</h2>
+        <div className="heading">
+          <h2 className="heading__secondary">Personal</h2>
+          <h2 className="heading__tertiary">Projects</h2>
         </div>
         <div className="projects__flexbox">
           {projectsData.map((project, i) => (
