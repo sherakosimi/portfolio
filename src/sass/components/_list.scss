@@ -1,0 +1,41 @@
+.list {
+    color: $color-white;
+    font-family: Lato-Bold;
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    font-size: 1.6rem;
+    column-width: 7rem;
+    column-gap: 4rem;
+    //  background-color: antiquewhite;
+    justify-content: center;
+
+    &__item {
+        // background-color: aqua;
+        display: flex;
+        align-items: center;
+        text-align: start;
+        // gap: 0.8rem;
+        padding-top: 1rem;
+        white-space: nowrap;
+
+        // text-overflow: ellipsis;
+    }
+
+    &__answer {
+        font-family: Lato-Light;
+    }
+
+    &__icon {
+        //background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 3.5rem;
+        font-size: 2.5rem;
+        color: $tertiary-color;
+    }
+}

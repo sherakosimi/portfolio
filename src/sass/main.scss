@@ -5,22 +5,27 @@
 @import "sections/about";
 @import "sections/work";
 @import "sections/footer";
+@import "sections/home";
 @import "base/base";
 @import "base/animations";
 @import "base/utilities";
 @import "base/typography";
-@import "pages/home";
 @import "icons/fontawesome.scss";
 @import "icons/solid.scss";
 @import "icons/brands.scss";
+@import "components/project-popup";
+@import "components/list.scss";
 
 //fonts
-
 @font-face {
     font-family: Biotif-Regular;
     src: url(../fonts/Biotif-Regular.ttf);
 }
 
+@font-face {
+    font-family: Biotif-Light;
+    src: url(../fonts/Biotif-Light.ttf);
+}
 @font-face {
     font-family: Biotif-Medium;
     src: url(../fonts/Biotif-Medium.ttf);

@@ -6,8 +6,8 @@ export default function About() {
     <section id="about" className="section-about">
       <div className="about">
         <div className="heading">
-          <h2 className="heading__secondary">Personal</h2>
-          <h2 className="heading__tertiary">Projects</h2>
+          <h2 className="heading__secondary">About</h2>
+          <h2 className="heading__tertiary">Me</h2>
         </div>
         <div className="grid-container">
           <div className="about-grid">
@@ -17,43 +17,68 @@ export default function About() {
               </div>
             </div>
             <div className="grid-items grid-items--bio">
-              <div className="grid-items__heading">
-                <i class="fa-solid fa-globe"></i>
-                <span className="grid-items__title">Bio:</span>
-              </div>
               <ul className="bio-list">
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-solid fa-signature"></i>
+                  </span>
                   Name:
                   <span className="bio-list--answer">Shermukhammad Kosimi</span>
                 </li>
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </span>
                   Degree:
                   <span className="bio-list--answer">
                     B.S in Computer Science
                   </span>
                 </li>
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                  </span>
                   Languages:
                   <span className="bio-list--answer">
-                    English, Tajik, Russian
+                    Russian, English, Tajik
                   </span>
                 </li>
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                  </span>
                   University:
                   <span className="bio-list--answer">WIT (Boston)</span>
                 </li>
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-brands fa-square-js"></i>
+                  </span>
                   Age:
                   <span className="bio-list--answer">23 y.o</span>
                 </li>
                 <li className="bio-list--item">
+                  <span className="bio-list--icon">
+                    <i class="fa-solid fa-house-flag"></i>
+                  </span>
                   Home Country:
                   <span className="bio-list--answer">Tajikistan</span>
                 </li>
               </ul>
             </div>
+            <div className="grid-items grid-items--intro">
+              <div className="intro-container">
+                <h2 className="introduction">
+                  A highly motivated and talented Computer Science graduate,
+                  passionate about leveraging technology to solve complex
+                  problems and make a positive impact on the world. With a
+                  strong foundation in programming languages, software
+                  engineering, databases, and artificial intelligence
+                </h2>
+              </div>
+            </div>
 
-            <div className="grid-items grid-items--tech">
+            {/* <div className="grid-items grid-items--tech">
               <div className="grid-items__heading">
                 <i class="fa-solid fa-code"></i>
                 <span className="grid-items__title">Tech Stack:</span>
@@ -85,7 +110,7 @@ export default function About() {
                   <span className="tech-list--answer">Redux </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

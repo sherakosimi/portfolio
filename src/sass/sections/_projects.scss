@@ -38,7 +38,7 @@
         width: 100%;
         height: 32rem;
         padding: 2rem;
-        background-color: #8bc6ec;
+        background-color: #f9f9f9;
         background-image: linear-gradient(80deg, #fffb7d 0%, #aced81 90%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 90%);
@@ -63,7 +63,7 @@
 
     &__description {
         font-size: 1.4rem;
-        font-family: Biotif-Medium;
+        font-family: Biotif-Regular;
         text-align: start;
         color: black;
         text-transform: uppercase;
@@ -194,8 +194,8 @@
 
         &--platform {
             font-size: 1.3rem;
-            color: rgb(205, 204, 204);
-            font-family: Biotif-Italic;
+            color: rgb(175, 175, 175);
+            font-family: Biotif-Light;
             text-transform: uppercase;
         }
     }

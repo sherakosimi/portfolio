@@ -4,6 +4,7 @@ import Header from "./sections/Header";
 import Projects from "./sections/Projects/Projects";
 import Work from "./sections/Work/Work";
 import Footer from "./sections/Footer";
+import ProjectPage from "./sections/Projects/ProjectPage";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Work />
         <About />
       </main>
+      <Footer />
+      {/* <ProjectPage /> */}
     </div>
   );
 }

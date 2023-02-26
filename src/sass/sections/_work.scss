@@ -16,6 +16,7 @@
     align-items: flex-end;
     height: 85%;
     width: 100%;
+    // background-color: whitesmoke;
 }
 
 .grid {
@@ -102,7 +103,7 @@
             font-size: 2.5rem;
         }
         &--location {
-            font-family: Lato-Regular;
+            font-family: Biotif-Light;
             font-size: 1.7rem;
         }
     }
@@ -133,7 +134,7 @@
 
     &__line {
         margin-top: 7px;
-        background-color: $secondary-color;
+        background-color: $tertiary-color;
         width: 100%;
         min-height: 1px;
     }
