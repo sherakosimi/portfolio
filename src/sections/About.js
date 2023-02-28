@@ -9,7 +9,7 @@ export default function About() {
           <h2 className="heading__secondary">About</h2>
           <h2 className="heading__tertiary">Me</h2>
         </div>
-        <div className="grid-container">
+        {/* <div className="grid-container">
           <div className="about-grid">
             <div className="grid-items grid-items--photo">
               <div className="img-container">
@@ -111,8 +111,8 @@ export default function About() {
                 </li>
               </ul>
             </div> */}
-          </div>
-        </div>
+        {/* </div>
+        </div> */}
       </div>
     </section>
   );

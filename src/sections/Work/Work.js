@@ -27,10 +27,8 @@ export default function Work() {
                     </span>
                     <span className="item__position--date">{item.date}</span>
                   </div>
-                  <button className="btn-work">
-                    <span>
-                      <i class="bx bxs-chevron-right"></i>
-                    </span>
+                  <button className="btn btn--work">
+                    <i class="bx bxs-chevron-right"></i>
                   </button>
                 </div>
                 <h2 className="item__responsibility">

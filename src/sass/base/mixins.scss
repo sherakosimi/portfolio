@@ -1,0 +1,18 @@
+@mixin btn($height, $width, $font-size, $color) {
+    height: $height;
+    width: $width;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin neumorph($inset, $distance, $blur, $border-radius, $shadow-one, $shadow-two) {
+    @if $inset {
+        box-shadow: inset $distance $distance $blur $shadow-one,
+            inset calc(0px - $distance) calc(0px - $distance) $blur $shadow-two;
+    } @else {
+        box-shadow: $distance $distance $blur $shadow-one, calc(0px - $distance) calc(0px - $distance) $blur $shadow-two;
+    }
+    background: $primary-color;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+}

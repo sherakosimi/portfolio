@@ -16,7 +16,6 @@ function App() {
         <About />
       </main>
       <Footer />
-      {/* <ProjectPage /> */}
     </div>
   );
 }

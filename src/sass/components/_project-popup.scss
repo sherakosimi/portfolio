@@ -6,8 +6,6 @@
     left: 0;
     background-color: rgba($color-white, 0.8);
     z-index: 9999;
-    opacity: 1;
-    visibility: visible;
     transition: all 0.3s;
 
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
@@ -17,8 +15,6 @@
     }
 
     &__content {
-        // background-color: aliceblue;
-        //@include absCenter;
         padding: 5rem 5rem;
         position: absolute;
         top: 50%;
@@ -28,16 +24,24 @@
         background-color: $primary-color;
         border-radius: 10px;
         overflow: hidden;
-        opacity: 1;
-        height: 75%;
+
+        height: 80%;
+
         transition: all 0.5s 0.2s;
     }
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
 
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
     &__header {
         display: flex;
         width: 100%;
         position: relative;
-        //  justify-content: space-between;
     }
 
     &__close {
@@ -47,8 +51,7 @@
             right: 0;
             justify-self: end;
             color: $color-white;
-            // font-weight: 200;
-            font-size: 6rem;
+            font-size: 3rem;
         }
         &:hover {
             color: $secondary-color;
@@ -61,7 +64,7 @@
     &__container {
         display: flex;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 2.4rem;
         height: 80%;
     }
 
@@ -74,104 +77,80 @@
 
         > span {
             font-family: Biotif-Bold;
+            &:last-of-type {
+                color: $tertiary-color;
+                font-family: Biotif-Regular;
+            }
+        }
+    }
+
+    &__features {
+        width: 100%;
+        font-family: Biotif-Regular;
+        color: $color-white;
+        font-size: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--item {
+            line-height: 140%;
+            width: 100%;
+
+            > span {
+                color: $tertiary-color;
+                font-family: Biotif-Bold;
+            }
         }
     }
 
     &__functionality {
         font-size: 1.8rem;
         color: $color-white;
-        font-family: Biotif-Light;
+        font-family: Biotif-Italic;
+        letter-spacing: 1px;
     }
 
     &__cover {
-        border-radius: 10px;
         margin-top: 1.5rem;
         width: 95%;
         padding: 2rem 2.2rem;
+
+        @include neumorph(true, 33px, 70px, 10px, #202428, #32363d);
         background: #292d32;
-        border: 2px solid $border-color;
-        box-shadow: inset 33px 33px 70px #202428, inset -33px -33px 70px #32363d;
-    }
-}
-
-.screens {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    //  background-color: antiquewhite;
-    &__img1 {
-        align-self: flex-start;
-        height: 50rem;
-        //width: 20rem;
     }
 
-    &__img2 {
-        height: 50rem;
-        //align-self: flex-end;
-        //width: 20rem;
-    }
-}
-
-.info {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 1.7rem;
-    // background-color: black;
-}
-
-.source {
-    // background-color: aqua;
-    //  width: 5rem;
-    height: 8rem;
-    //background-color: aqua;
-    justify-self: flex-start;
-    margin-left: 4rem;
-    gap: 2.5rem;
-    // align-self: flex-end;
-    display: flex;
-    align-items: flex-end;
-    //justify-content: space-between;
-    &__btn {
-        &,
-        &:link,
-        &:visited {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding-top: 0.2rem;
-            width: 5rem;
-            border: 1px solid $border-color;
-            cursor: pointer;
-            border-radius: 50px;
-            background: $primary-color;
-            box-shadow: 10px 10px 16px #212429, -10px -10px 16px #31363c;
-            height: 5rem;
+    &__screens {
+        flex: 1;
+        position: relative;
+        &--img1 {
+            position: absolute;
+            left: 5%;
+            top: -12%;
+            height: 58rem;
         }
 
-        &:active {
-            box-shadow: inset 8px 8px 16px $box-shadow-one, inset -8px -8px 16px $box-shadow-two;
-        }
-
-        &:hover {
-            border: 1px solid #22242a;
-        }
-    }
-    &__icon {
-        font-size: 2.5rem;
-        color: $color-white;
-
-        &--behance {
-            padding-top: 0.2rem;
-            padding-left: 0.2rem;
-            font-size: 2.3rem;
+        &--img2 {
+            position: absolute;
+            height: 58rem;
+            bottom: -1rem;
+            right: 5%;
         }
     }
 
-    &__text {
-        color: $color-white;
-        font-size: 1.7rem;
+    &__info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__source {
+        height: 8rem;
+        justify-self: flex-start;
+        margin-left: 4rem;
+        gap: 2.5rem;
+        display: flex;
+        align-items: flex-end;
     }
 }

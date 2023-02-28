@@ -7,13 +7,13 @@
     -moz-columns: 2;
 
     font-size: 1.6rem;
-    column-width: 7rem;
-    column-gap: 4rem;
+
+    column-gap: 3rem;
     //  background-color: antiquewhite;
     justify-content: center;
 
     &__item {
-        // background-color: aqua;
+        //background-color: aqua;
         display: flex;
         align-items: center;
         text-align: start;
@@ -35,7 +35,7 @@
         align-items: center;
         width: 5rem;
         height: 3.5rem;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         color: $tertiary-color;
     }
 }

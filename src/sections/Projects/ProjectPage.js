@@ -11,55 +11,57 @@ export default function ProjectPage() {
             <h2 className="heading__secondary">Mobile App</h2>
             <h1 className="heading__tertiary">LifeTrackr</h1>
           </div>
-          <div className="source">
-            <button className="source__btn">
-              <span className="source__icon">
-                <i class="fa-brands fa-github"></i>
-              </span>
+          <div className="popup__source">
+            <button className="btn btn--source">
+              <i class="fa-brands fa-github"></i>
             </button>
-            <button className="source__btn ">
-              <span className="source__icon source__icon--behance">
-                <i class="fa-brands fa-behance"></i>
-              </span>
+            <button className="btn btn--source">
+              <i class="fa-brands fa-behance"></i>
             </button>
           </div>
-          <a href="f" className="popup__close">
+          <a href="#projects" className="popup__close">
             <i class="fa-solid fa-xmark"></i>
           </a>
         </div>
         <div className="popup__container">
-          <div className="info">
+          <div className="popup__info">
             <p className="popup__description">
               <span>Lifetrackr</span> is a cross-platform mobile app created
-              using React Native framework. <br /> The goal of this app is to
-              offer functionality that aids in the process of taking care of
-              plants and animals. The case is done as a diploma project.
+              using <span>React Native</span> framework. <br /> The goal of this
+              app is to offer functionality that aids in the process of taking
+              care of plants and animals. The case is done as a diploma project.
             </p>
-            <div>
+            <div className="popup__features">
               <h3 className="popup__functionality">Functionality:</h3>
+              <p className="popup__features--item">
+                <span>Add Companions</span> (pet) by providing its name, related
+                notes, and companion type. <br />
+                There are five available companion types in our app: dog, cat,
+                reptile, plant, bird
+              </p>
+              <p className="popup__features--item">
+                <span>Link reminders</span> to each companion by specifying the
+                name, frequency, and reminder type and get timely notifications.
+                Reminder types change depending on the companion
+              </p>
+            </div>
+            <div>
+              <h3 className="popup__functionality">Tech:</h3>
               <div className="popup__cover">
                 <ul className="list">
-                  <li className="list__item">
-                    <span className="list__icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    React Native
-                    <span className="list__answer">
-                      &nbsp;a software framework
-                    </span>
-                  </li>
                   <li className="list__item">
                     <span className="list__icon">
                       <i class="bx bxl-redux"></i>
                     </span>
                     Redux Saga
                     <span className="list__answer">
-                      &nbsp;as a state manager
+                      &nbsp;as a AJAX state manager
                     </span>
                   </li>
+
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-graduation-cap"></i>
+                      <i class="fa-solid fa-book-atlas fa-sm"></i>
                     </span>
                     Axios
                     <span className="list__answer">
@@ -68,17 +70,16 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-hands-asl-interpreting"></i>
+                      <i class="fa-solid fa-signs-post fa-sm"></i>
                     </span>
-                    Redux Saga
+                    React Navigaton
                     <span className="list__answer">
-                      {" "}
-                      &nbsp;as a state manager
+                      &nbsp;as page navigator
                     </span>
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-building-columns"></i>
+                      <i class="fa-solid fa-icons fa-sm"></i>
                     </span>
                     MUI
                     <span className="list__answer">
@@ -87,21 +88,29 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-brands fa-square-js"></i>
+                      <i class="fa-regular fa-calendar-days fa-sm"></i>
                     </span>
-                    Neomorphism
+                    Moment JS
                     <span className="list__answer">
-                      {" "}
-                      &nbsp;as an UI design style
+                      &nbsp;as a date/time formatter
+                    </span>
+                  </li>
+                  <li className="list__item">
+                    <span className="list__icon">
+                      <i class="fa-solid fa-file-signature fa-sm"></i>{" "}
+                    </span>
+                    Formik
+                    <span className="list__answer">
+                      &nbsp;for handling input forms
                     </span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="screens">
-            <img src={screen} className="screens__img1" alt="" />
-            <img src={screen2} className="screens__img2" alt="" />
+          <div className="popup__screens">
+            <img src={screen} className="popup__screens--img1" alt="" />
+            <img src={screen2} className="popup__screens--img2" alt="" />
           </div>
         </div>
       </div>

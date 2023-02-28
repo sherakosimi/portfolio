@@ -11,7 +11,6 @@
 
 .navbar {
     font-size: 1.9rem;
-    background: $primary-color;
     position: fixed;
     width: 90vw;
     height: 10rem;
@@ -19,13 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 22px 22px 46px $box-shadow-one, -22px -22px 46px $box-shadow-two;
-    border-radius: 25px;
     overflow: hidden;
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease;
-    border: 1px solid $border-color;
+    @include neumorph(false, 22px, 46px, 25px, $box-shadow-one, $box-shadow-two);
 }
 
 .nav-list {
@@ -35,7 +32,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
+    font-family: $font-regular;
     &__item {
         display: flex;
         justify-content: center;
@@ -75,9 +72,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 150px;
-        background: linear-gradient(145deg, #25292d, #2c3036);
-        box-shadow: inset 12px 12px 14px $box-shadow-one, inset -12px -12px 14px $box-shadow-two;
+        @include neumorph(true, 12px, 14px, 150px, $box-shadow-one, $box-shadow-two);
     }
 }
 
@@ -130,7 +125,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 2.1rem;
     color: white;
 
     &__container {
@@ -140,33 +134,11 @@
         align-items: center;
         justify-content: space-between;
     }
-
-    &__icon-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50px;
-        border: 1px solid $border-color;
-        color: $color-white;
-        background: $primary-color;
-        box-shadow: 14px 14px 22px #1b1e21, -14px -14px 22px #373c43;
-        cursor: pointer;
-
-        &:active {
-            box-shadow: inset 8px 8px 16px $box-shadow-one, inset -8px -8px 16px $box-shadow-two;
-        }
-        &:hover {
-            color: $color-white;
-            border: 1px solid #22242a;
-        }
-    }
 }
 
 .hero {
     flex: 1;
-    overflow: hidden;
+
     z-index: 100;
     padding-top: 11rem;
 
@@ -207,11 +179,12 @@
 
     &__box--subtitle {
         max-width: 90%;
-        padding: 2rem 0.3rem;
+        margin: 2rem 0.3rem;
         color: #fff;
-        line-height: 4rem;
+        line-height: 170%;
         font-family: Biotif-Medium;
         font-size: 2.2rem;
+        padding-bottom: 1.5rem;
     }
 
     &__box--image {
@@ -234,13 +207,11 @@
     &__image--container {
         height: 55rem;
         width: 55rem;
-        border-radius: 40px;
-        border: 1px solid $border-color;
-        background: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 38px 38px 77px $box-shadow-one, -38px -38px 77px $box-shadow-two;
+
+        @include neumorph(false, 38px, 77px, 40px, $box-shadow-one, $box-shadow-two);
         transition: all 0.3s ease-in-out;
 
         &:hover {

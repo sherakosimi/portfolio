@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { projectsData } from "./ProjectsData";
+import ProjectPage from "./ProjectPage";
 
 export default function Projects() {
+  const [isOpen, setOpen] = useState(false);
+
+  const onClick = (project) => {
+    setOpen(true);
+  };
+
+  console.log(isOpen);
   return (
     <section id="projects" className="section-projects">
       <div className="projects">
@@ -51,7 +59,10 @@ export default function Projects() {
                   <h2 className="card__title--platform">{project.platform}</h2>
                 </div>
                 <div className="card__more">
-                  <button className="card__more--btn">
+                  <button
+                    className="btn btn--project"
+                    onClick={() => onClick(project)}
+                  >
                     <i class={project.btnIcon}></i>
                   </button>
                 </div>

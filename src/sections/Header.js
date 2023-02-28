@@ -34,12 +34,12 @@ export default function Header() {
         </div>
         <div className="social">
           <div className="social__container">
-            <div className="social__icon-wrapper">
+            <button className="btn btn--social">
               <i className="bx bxl-github bx-tada-hover"></i>
-            </div>
-            <div className="social__icon-wrapper">
+            </button>
+            <button className="btn btn--social">
               <i class="bx bxl-linkedin bx-tada-hover"></i>
-            </div>
+            </button>
           </div>
         </div>
       </nav>
@@ -52,6 +52,12 @@ export default function Header() {
               I’m also a designer and general doodler with a keen eye for
               creating engaging UI, bringing products to life.
             </span>
+            <a role="button" className="btn btn--main" href="#projects">
+              Advance
+              <span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </a>
           </div>
           <div className="hero__box--image">
             <div className="hero__image--container">

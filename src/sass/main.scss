@@ -1,4 +1,6 @@
-@import "abstracts/variables";
+@import "base/variables";
+@import "base/mixins";
+@import "components/button.scss";
 @import "sections/typing";
 @import "sections/header";
 @import "sections/projects";

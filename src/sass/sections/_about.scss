@@ -1,18 +1,15 @@
 .about {
     height: 100%;
     width: 100%;
-    border-radius: 50px;
-    background: #292d32;
-    border: 2px solid $border-color;
-    box-shadow: inset 33px 33px 70px #202428, inset -33px -33px 70px #32363d;
-    padding: 6rem 6rem;
+    padding: $section-padding;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
+    overflow: hidden;
 }
 
 .about-grid {
-    //background-color: #071628;
     width: 100%;
     display: grid;
     grid-template-columns: 52rem 52rem 52rem;
