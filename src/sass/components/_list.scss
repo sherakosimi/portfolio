@@ -7,19 +7,14 @@
     -moz-columns: 2;
     font-size: 1.6rem;
     column-gap: 3rem;
-    //  background-color: antiquewhite;
     justify-content: center;
 
     &__item {
-        //background-color: aqua;
         display: flex;
         align-items: center;
         text-align: start;
-        // gap: 0.8rem;
         padding-top: 1rem;
         white-space: nowrap;
-
-        // text-overflow: ellipsis;
     }
 
     &__answer {
@@ -27,7 +22,6 @@
     }
 
     &__icon {
-        //background-color: aqua;
         display: flex;
         justify-content: center;
         align-items: center;

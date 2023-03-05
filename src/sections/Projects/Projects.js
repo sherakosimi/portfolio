@@ -29,8 +29,8 @@ export default function Projects() {
                 </h3>
                 <ul className="card__list">
                   {project.techStack.map((item, k) => (
-                    <>
-                      <li className="card__item card__item--front" key={k}>
+                    <div key={k}>
+                      <li className="card__item card__item--front">
                         <span
                           className="card__icon card__icon--front"
                           style={item.colorFront}
@@ -48,7 +48,7 @@ export default function Projects() {
                         </span>
                         {item.nameBack}
                       </li>
-                    </>
+                    </div>
                   ))}
                 </ul>
                 <h2 className="card__date">{project.date}</h2>
@@ -63,7 +63,7 @@ export default function Projects() {
                     className="btn btn--project"
                     onClick={() => onClick(project)}
                   >
-                    <i class={project.btnIcon}></i>
+                    <i className={project.btnIcon}></i>
                   </button>
                 </div>
               </div>

@@ -22,7 +22,7 @@ export default function Header() {
             </a>
           </li>
           <li className="nav-list__item">
-            <a href="hero" className="nav-list__title">
+            <a href="#contact" className="nav-list__title">
               <span>Contact</span>
             </a>
           </li>
@@ -38,7 +38,7 @@ export default function Header() {
               <i className="bx bxl-github bx-tada-hover"></i>
             </button>
             <button className="btn btn--social">
-              <i class="bx bxl-linkedin bx-tada-hover"></i>
+              <i className="bx bxl-linkedin bx-tada-hover"></i>
             </button>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Header() {
             <a role="button" className="btn btn--main" href="#projects">
               Advance
               <span>
-                <i class="fa-solid fa-chevron-right"></i>
+                <i className="fa-solid fa-chevron-right"></i>
               </span>
             </a>
           </div>

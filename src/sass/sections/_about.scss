@@ -9,9 +9,10 @@
     gap: 8rem;
 
     &__container {
+        max-height: 60rem;
         display: flex;
         flex-direction: row;
-        gap: 6rem;
+        gap: 5rem;
         letter-spacing: 1px;
         width: 100%;
     }
@@ -159,9 +160,7 @@
 
 .intro {
     width: 50rem;
-    height: 100%;
     padding: 3rem 4rem;
-    position: relative;
 
     &__heading {
         font-size: 3.9rem;
@@ -171,10 +170,62 @@
 
     &__paragraph {
         margin-top: 2rem;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         color: $color-white;
         font-family: $font-light;
         line-height: 150%;
+        text-align: justify;
+    }
+}
+
+.skills {
+    width: 45em;
+    padding: 3rem 4rem;
+    @include neumorph(true, 18px, 36px, 40px, #202428, #32363d);
+    border: 3px solid $border-color;
+
+    &__container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    &__heading {
+        font-family: $font-bold;
+        font-size: 3.9rem;
+        color: $color-white;
+    }
+
+    &__subheading {
+        color: $secondary-color;
+        font-family: $font-light;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-left: 1rem;
+        list-style: none;
+        font-size: 1.6rem;
+
+        &--item {
+            color: $color-white;
+            display: flex;
+            flex-direction: row;
+
+            gap: 1rem;
+            line-height: 4rem;
+
+            & > span {
+                color: $tertiary-color;
+                padding-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                font-size: 2.4rem;
+            }
+        }
     }
 }
 

@@ -4,8 +4,8 @@ import screen2 from "../../img/lifetrackrSignUp.png";
 
 export default function ProjectPage() {
   return (
-    <div class="popup" id="popup">
-      <div class="popup__content">
+    <div className="popup" id="popup">
+      <div className="popup__content">
         <div className="popup__header">
           <div className="heading">
             <h2 className="heading__secondary">Mobile App</h2>
@@ -13,14 +13,14 @@ export default function ProjectPage() {
           </div>
           <div className="popup__source">
             <button className="btn btn--source">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </button>
             <button className="btn btn--source">
-              <i class="fa-brands fa-behance"></i>
+              <i className="fa-brands fa-behance"></i>
             </button>
           </div>
           <a href="#projects" className="popup__close">
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </a>
         </div>
         <div className="popup__container">
@@ -51,7 +51,7 @@ export default function ProjectPage() {
                 <ul className="list">
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="bx bxl-redux"></i>
+                      <i className="bx bxl-redux"></i>
                     </span>
                     Redux Saga
                     <span className="list__answer">
@@ -61,7 +61,7 @@ export default function ProjectPage() {
 
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-book-atlas fa-sm"></i>
+                      <i className="fa-solid fa-book-atlas fa-sm"></i>
                     </span>
                     Axios
                     <span className="list__answer">
@@ -70,7 +70,7 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-signs-post fa-sm"></i>
+                      <i className="fa-solid fa-signs-post fa-sm"></i>
                     </span>
                     React Navigaton
                     <span className="list__answer">
@@ -79,7 +79,7 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-icons fa-sm"></i>
+                      <i className="fa-solid fa-icons fa-sm"></i>
                     </span>
                     MUI
                     <span className="list__answer">
@@ -88,7 +88,7 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-regular fa-calendar-days fa-sm"></i>
+                      <i className="fa-regular fa-calendar-days fa-sm"></i>
                     </span>
                     Moment JS
                     <span className="list__answer">
@@ -97,7 +97,7 @@ export default function ProjectPage() {
                   </li>
                   <li className="list__item">
                     <span className="list__icon">
-                      <i class="fa-solid fa-file-signature fa-sm"></i>{" "}
+                      <i className="fa-solid fa-file-signature fa-sm"></i>{" "}
                     </span>
                     Formik
                     <span className="list__answer">
