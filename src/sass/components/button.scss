@@ -41,6 +41,7 @@
     }
     &--main {
         @include btn(5rem, 18rem, 1.7rem, $tertiary-color);
+        margin-top: 4.5rem;
         gap: 1rem;
         padding: 0rem 1rem;
         overflow: hidden;

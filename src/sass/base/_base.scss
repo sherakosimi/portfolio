@@ -13,6 +13,18 @@ html {
     overflow: hidden;
     scroll-behavior: smooth;
     overflow-y: scroll;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 53%;
+    }
+
+    @media only screen and (max-width: $bp-laptop) {
+        font-size: 49%;
+    }
 }
 
 body {

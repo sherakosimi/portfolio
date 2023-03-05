@@ -59,7 +59,7 @@ export default function Header() {
               </span>
             </a>
           </div>
-          <div className="hero__box--image">
+          <div className="hero__box--photo">
             <div className="hero__image--container">
               <img src={mainPhoto} alt="Photo1" className="hero__image" />
             </div>
