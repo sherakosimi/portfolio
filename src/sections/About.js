@@ -35,12 +35,8 @@ export default function About() {
                 </div>
               </div>
               <div className="bio__section">
-                <h3 className="bio__section--text">BIO</h3>
+                <h3 className="bio__section--text">Background</h3>
                 <div className="bio__section--degree">
-                  <div className="bio__section--item">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span>Age:</span>23 y.o
-                  </div>
                   <div className="bio__section--item">
                     <i className="fa-solid fa-graduation-cap"></i>
                     <span>Degree:</span>B.S in Computer Science (WIT)
@@ -74,6 +70,10 @@ export default function About() {
                       <i className="bx bxl-python"></i>
                     </div>
                   </div>
+                  <div className="bio__section--item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certifications:</span>23 y.o
+                  </div>
                 </div>
               </div>
 
@@ -101,19 +101,23 @@ export default function About() {
           <div className="intro">
             <h2 className="intro__heading">Hello!</h2>
             <p className="intro__paragraph">
-              I'm Shermukhammad Kosimi, a recent Computer Science graduate with
-              a passion for coding and a love for problem-solving. As a
-              self-motivated and dedicated developer, I thrive on challenges and
-              am always seeking new ways to improve my skills. With a strong
-              foundation in programming languages and a keen eye for detail, I'm
-              committed to delivering high-quality solutions that meet and
-              exceed expectations.
+              <span>I'm Shermukhammad Kosimi,</span> a recent Computer Science
+              graduate originally from Tajikistan. As a self-motivated with a
+              strong foundation in programming languages, I always thrive on
+              challenges and am always seeking new ways to improve my skills.
             </p>
             <p className="intro__paragraph">
-              I'm Shermukhammad Kosimi, a recent Computer Science graduate with
-              a passion for coding and a love for problem-solving. As a
-              self-motivated and dedicated developer, I thrive on challenges and
-              am always seeking new ways to improve my skills. With a strong
+              <span>Throughout my career,</span> I have worked on several large
+              projects and take pride in creating high-quality user interfaces.
+              I am confident that my skills and experience will make me a
+              valuable addition to your team.
+            </p>
+
+            <p className="intro__paragraph">
+              <span>Outside of programming,</span> as a former semi-professional
+              soccer player, I gained valuable experience that helped me develop
+              my leadership skills, including communication, motivation, and
+              effective resource management.
             </p>
           </div>
 
@@ -124,7 +128,7 @@ export default function About() {
               <ul className="skills__list">
                 <li className="skills__list--item">
                   <span>
-                    <i className="bx bxl-python"></i>
+                    <i class="fa-solid fa-layer-group"></i>
                   </span>
                   Data Structures & Algorithms
                 </li>
@@ -138,7 +142,7 @@ export default function About() {
                   <span>
                     <i class="fa-solid fa-sitemap"></i>
                   </span>
-                  Project Management
+                  Operating Systems
                 </li>
                 <li className="skills__list--item">
                   <span>
@@ -179,13 +183,7 @@ export default function About() {
                   <span>
                     <i class="fa-solid fa-pen-nib"></i>
                   </span>
-                  UI/UX Knowledge
-                </li>
-                <li className="skills__list--item">
-                  <span>
-                    <i class="fa-solid fa-object-group"></i>
-                  </span>
-                  Responsive Design
+                  Responsive UI/UX Design
                 </li>
               </ul>
             </div>

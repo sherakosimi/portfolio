@@ -8,6 +8,7 @@
     overflow: hidden;
     @include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
     gap: 8rem;
+    max-width: 173em;
 }
 
 .grid-container {

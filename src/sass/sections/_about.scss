@@ -7,6 +7,7 @@
     //@include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
     overflow: hidden;
     gap: 8rem;
+    max-width: 175rem;
 
     &__container {
         max-height: 60rem;
@@ -117,7 +118,6 @@
             & > span {
                 margin-left: 0.7rem;
                 font-family: $font-bold;
-                padding-right: 0rem;
             }
 
             & > i {
@@ -175,6 +175,11 @@
         font-family: $font-light;
         line-height: 150%;
         text-align: justify;
+
+        & > span {
+            color: $tertiary-color;
+            font-family: $font-bold;
+        }
     }
 }
 
@@ -207,6 +212,7 @@
         margin-left: 1rem;
         list-style: none;
         font-size: 1.6rem;
+        font-family: $font-regular;
 
         &--item {
             color: $color-white;

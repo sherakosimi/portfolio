@@ -16,3 +16,19 @@
     border: 2px solid $border-color;
     border-radius: $border-radius;
 }
+
+@mixin section {
+    width: 100%;
+    padding: $section-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 173rem;
+}
+
+@mixin container {
+    display: flex;
+    gap: 5rem;
+    letter-spacing: 1px;
+    width: 100%;
+}

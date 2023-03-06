@@ -1,0 +1,17 @@
+.contact {
+    width: 100%;
+    padding: $section-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 175rem;
+
+    &__container {
+        max-height: 60rem;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}
