@@ -83,4 +83,17 @@
             animation: advanceIcon 1.5s infinite;
         }
     }
+
+    &--contact {
+        padding-top: 0.3rem;
+        margin-top: 3rem;
+        @include btn(5rem, 18rem, 1.7rem, $primary-color);
+        background-color: $tertiary-color;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $tertiary-color;
+        }
+    }
 }

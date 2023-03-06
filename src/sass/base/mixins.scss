@@ -17,18 +17,22 @@
     border-radius: $border-radius;
 }
 
-@mixin section {
+@mixin cover() {
+    height: 100%;
     width: 100%;
     padding: $section-padding;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 173rem;
+    @include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
+    overflow: hidden;
+    gap: 7rem;
+    max-width: 173em;
 }
 
 @mixin container {
-    display: flex;
-    gap: 5rem;
-    letter-spacing: 1px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }

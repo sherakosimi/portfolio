@@ -3,13 +3,13 @@ import { workData } from "./WorkData";
 
 export default function Work() {
   return (
-    <section id="work" className="section-work">
-      <div className="work">
+    <section id="work">
+      <div className="cover">
         <div className="heading">
           <h2 className="heading__secondary">Work</h2>
           <h2 className="heading__tertiary">Experience</h2>
         </div>
-        <div className="grid-container">
+        <div className="cover__container">
           <div className="grid">
             {workData.map((item, i) => (
               <div className={item.style} key={i}>

@@ -1,17 +1,62 @@
-.contact {
-    width: 100%;
-    padding: $section-padding;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 175rem;
+.form {
+    height: 50rem;
+    width: 80rem;
+    background: linear-gradient(90deg, #26292d, #2c3036);
+    box-shadow: 18px 19px 36px #1e2024, -18px -18px 36px #343a40;
+    border-radius: 40px;
+    border: 3px solid $border-color;
 
-    &__container {
-        max-height: 60rem;
+    display: flex;
+    letter-spacing: 1px;
+
+    &__side {
+        &:first-child {
+            border-right: 1px solid $secondary-color;
+        }
+
+        flex: 1;
         display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        letter-spacing: 1px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 4rem 4rem;
+    }
+
+    &__group {
+        height: 4.5rem;
         width: 100%;
+        position: relative;
+        padding: 0 1rem;
+        @include neumorph(true, 5px, 8px, 10px, #202327, #32373d);
+
+        &--input {
+            color: $color-white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 100%;
+        }
+        &--label {
+            left: 0;
+            top: 1rem;
+            position: absolute;
+        }
+    }
+
+    &__heading {
+        font-family: $font-regular;
+        font-size: 3.7rem;
+        color: $secondary-color;
+    }
+    &__subheading {
+        font-family: $font-light;
+        font-size: 1.5rem;
+        color: $color-white;
+    }
+
+    &__social {
     }
 }

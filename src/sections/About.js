@@ -2,13 +2,13 @@ import React from "react";
 import glasses from "../img/photoshoot.PNG";
 export default function About() {
   return (
-    <section id="about" className="section-about">
-      <div className="about">
+    <section id="about">
+      <div className="cover cover--noshadow">
         <div className="heading">
           <h2 className="heading__secondary">About</h2>
           <h2 className="heading__tertiary">Me</h2>
         </div>
-        <div className="about__container">
+        <div className="cover__container cover__container--about">
           <div className="bio">
             <div className="circle">
               <div className="circle__photo">

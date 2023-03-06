@@ -1,24 +1,3 @@
-.projects {
-    height: 100%;
-    width: 100%;
-    padding: $section-padding;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
-    overflow: hidden;
-    gap: 8rem;
-    max-width: 173em;
-
-    &__flexbox {
-        width: 100%;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-}
-
 .card {
     width: 27rem;
     height: 45rem;
