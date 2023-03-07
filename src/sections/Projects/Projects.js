@@ -11,7 +11,7 @@ export default function Projects() {
 
   console.log(isOpen);
   return (
-    <section id="projects">
+    <section id="projects" className="section">
       <div className="cover">
         <div className="heading">
           <h2 className="heading__secondary">Personal</h2>

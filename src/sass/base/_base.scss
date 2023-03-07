@@ -14,16 +14,23 @@ html {
     scroll-behavior: smooth;
     overflow-y: scroll;
 
-    @media only screen and (max-width: $bp-largest) {
+    @include respond(big-desktop) {
         font-size: 56%;
     }
-
-    @media only screen and (max-width: $bp-large) {
-        font-size: 53%;
+    @include respond(desktop) {
+        font-size: 52%;
     }
-
-    @media only screen and (max-width: $bp-laptop) {
-        font-size: 49%;
+    @include respond(big-laptop) {
+        font-size: 47%;
+    }
+    @include respond(laptop) {
+        font-size: 42%;
+    }
+    @include respond(small-laptop) {
+        font-size: 37%;
+    }
+    @include respond(tab-land) {
+        font-size: 32%;
     }
 }
 
@@ -38,11 +45,15 @@ body {
     color: black;
 }
 
-section {
+.section {
     padding: 13rem 7rem 1rem 7rem;
     display: flex;
     justify-content: center;
     overflow: hidden;
+
+    &--contact {
+        padding-bottom: 10rem;
+    }
 }
 
 .cover {
@@ -50,6 +61,7 @@ section {
     &--noshadow {
         box-shadow: none;
         border: none;
+        overflow: visible;
     }
     &__container {
         @include container;

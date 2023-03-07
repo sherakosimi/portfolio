@@ -8,7 +8,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        @include neumorph(false, 12px, 22px, 30px, #1b1e21, #373c43);
+        @include neumorph(false, 12px, 22px, 3rem, #1b1e21, #373c43);
         border: 1px solid $border-color;
     }
 
@@ -27,7 +27,8 @@
     }
 
     &--social {
-        @include btn(4rem, 4rem, 2.2rem, $color-white);
+        @include btn(4rem, 4rem, 2.4rem, $color-white);
+        padding-top: 0.2rem;
     }
 
     &--work {
@@ -48,7 +49,7 @@
         z-index: 1;
         position: relative;
         text-transform: uppercase;
-        padding-top: 0.3rem;
+        padding-top: 0.5rem;
         @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
 
         &::before {
@@ -73,7 +74,7 @@
         }
 
         & > span {
-            padding-bottom: 0.4rem;
+            padding-bottom: 0.2rem;
             font-size: 1.8rem;
             display: flex;
             align-items: center;

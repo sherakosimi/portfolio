@@ -22,7 +22,7 @@
         transform: translate(-50%, -50%);
         width: 80%;
         background-color: $primary-color;
-        border-radius: 10px;
+        border-radius: 1rem;
         overflow: hidden;
 
         height: 80%;
@@ -116,7 +116,7 @@
         width: 95%;
         padding: 2rem 2.2rem;
 
-        @include neumorph(true, 33px, 70px, 10px, #202428, #32363d);
+        @include neumorph(true, 33px, 70px, 1rem, #202428, #32363d);
         background: #292d32;
     }
 

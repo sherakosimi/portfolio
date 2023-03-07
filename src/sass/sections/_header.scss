@@ -21,7 +21,7 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease;
-    @include neumorph(false, 22px, 46px, 25px, $box-shadow-one, $box-shadow-two);
+    @include neumorph(false, 22px, 46px, 2.5rem, $box-shadow-one, $box-shadow-two);
     padding: 0 3rem;
 }
 
@@ -178,7 +178,7 @@
             max-width: 90%;
             margin: 0.5rem 0.3rem;
             color: #fff;
-            line-height: 170%;
+            line-height: 150%;
             font-family: Biotif-Medium;
             font-size: 2.2rem;
         }
@@ -189,16 +189,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            animation-name: fadeIn;
-            animation-duration: 2s;
-            animation-timing-function: ease;
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
         }
     }
 
     &__image {
         width: 93%;
         height: 93%;
-        border-radius: 33px;
+        border-radius: 3.3rem;
 
         &--container {
             height: 55rem;
@@ -206,8 +206,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            @include neumorph(false, 38px, 77px, 40px, $box-shadow-one, $box-shadow-two);
+            @include neumorph(false, 38px, 77px, 4rem, $box-shadow-one, $box-shadow-two);
             transition: all 0.3s ease-in-out;
 
             &:hover {

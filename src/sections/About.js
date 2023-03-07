@@ -2,7 +2,7 @@ import React from "react";
 import glasses from "../img/photoshoot.PNG";
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="section">
       <div className="cover cover--noshadow">
         <div className="heading">
           <h2 className="heading__secondary">About</h2>
@@ -71,7 +71,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="bio__section--item">
-                    <i class="fa-solid fa-certificate"></i>
+                    <i className="fa-solid fa-certificate"></i>
                     <span>Certifications:</span>23 y.o
                   </div>
                 </div>
@@ -128,32 +128,32 @@ export default function About() {
               <ul className="skills__list">
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i className="fa-solid fa-layer-group"></i>
                   </span>
                   Data Structures & Algorithms
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-laptop-code"></i>
+                    <i className="fa-solid fa-laptop-code"></i>
                   </span>
                   Web & Mobile App Development
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-sitemap"></i>
+                    <i className="fa-solid fa-sitemap"></i>
                   </span>
                   Operating Systems
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-user-secret"></i>
+                    <i className="fa-solid fa-user-secret"></i>
                   </span>
                   Cybersecurity
                 </li>
 
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-database"></i>
+                    <i className="fa-solid fa-database"></i>
                   </span>
                   Big Data Programming
                 </li>
@@ -163,25 +163,25 @@ export default function About() {
               <ul className="skills__list">
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-igloo"></i>
+                    <i className="fa-solid fa-igloo"></i>
                   </span>
                   DOM Manipulation
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-book-atlas"></i>
+                    <i className="fa-solid fa-book-atlas"></i>
                   </span>
                   RESTful API Integration
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-circle-nodes"></i>
+                    <i className="fa-solid fa-circle-nodes"></i>
                   </span>
                   AJAX State Management
                 </li>
                 <li className="skills__list--item">
                   <span>
-                    <i class="fa-solid fa-pen-nib"></i>
+                    <i className="fa-solid fa-pen-nib"></i>
                   </span>
                   Responsive UI/UX Design
                 </li>

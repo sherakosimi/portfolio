@@ -3,7 +3,7 @@ import { workData } from "./WorkData";
 
 export default function Work() {
   return (
-    <section id="work">
+    <section id="work" className="section">
       <div className="cover">
         <div className="heading">
           <h2 className="heading__secondary">Work</h2>

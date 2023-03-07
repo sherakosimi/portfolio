@@ -4,7 +4,7 @@
     font-size: $font-size;
     color: $color;
 }
-
+/// NEUMORPH STYLING
 @mixin neumorph($inset, $distance, $blur, $border-radius, $shadow-one, $shadow-two) {
     @if $inset {
         box-shadow: inset $distance $distance $blur $shadow-one,
@@ -17,6 +17,7 @@
     border-radius: $border-radius;
 }
 
+/// SECTION LAYOUT
 @mixin cover() {
     height: 100%;
     width: 100%;
@@ -24,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include neumorph(true, 33px, 70px, 50px, #202428, #32363d);
+    @include neumorph(true, 33px, 70px, 5rem, #202428, #32363d);
     overflow: hidden;
     gap: 7rem;
     max-width: 173em;
@@ -35,4 +36,38 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+/// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+    @if $breakpoint == tab-land {
+        @media (max-width: $bp-tab-land) {
+            @content;
+        }
+    }
+    @if $breakpoint == small-laptop {
+        @media (max-width: $bp-small-laptop) {
+            @content;
+        }
+    }
+    @if $breakpoint == laptop {
+        @media (max-width: $bp-laptop) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-laptop {
+        @media (max-width: $bp-big-laptop) {
+            @content;
+        }
+    }
+    @if $breakpoint == desktop {
+        @media (max-width: $bp-desktop) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width: $bp-big-desktop) {
+            @content;
+        }
+    }
 }
