@@ -21,7 +21,7 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease;
-    @include neumorph(false, 22px, 46px, 2.5rem, $box-shadow-one, $box-shadow-two);
+    @include neumorph(false, 2.2rem, 4.6rem, 2.5rem, $box-shadow-one, $box-shadow-two);
     padding: 0 3rem;
 }
 
@@ -44,7 +44,7 @@
         transition: all 0.5s;
 
         &:hover {
-            box-shadow: inset 0 -4px 0 0 $secondary-color;
+            box-shadow: inset 0 -0.4rem 0 0 $secondary-color;
         }
     }
 
@@ -66,14 +66,14 @@
     box-sizing: content-box;
 
     &__background {
-        border: 1px solid $border-color;
+        border: 0.1rem solid $border-color;
         overflow: hidden;
         height: 7rem;
         width: 7rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        @include neumorph(true, 12px, 14px, 150px, $box-shadow-one, $box-shadow-two);
+        @include neumorph(true, 1.2rem, 1.4rem, 15rem, $box-shadow-one, $box-shadow-two);
     }
 }
 
@@ -85,7 +85,7 @@
     border-radius: 5rem 5rem 0rem 5rem;
     transform: rotate(-135deg);
     animation: 0.1s flame infinite;
-    filter: blur(1.3px);
+    filter: blur(0.13rem);
     position: relative;
     box-shadow: 0.5rem 0.5rem 6rem rgb(140, 36, 1);
     border: 0.75rem solid black;
@@ -109,14 +109,14 @@
         background: linear-gradient(-45deg, red, orange);
         animation: 0.3s flame infinite;
         transform: scale(0.9) rotate(20deg);
-        border-radius: 4rem 4rem 0px 4rem;
-        top: 1px;
+        border-radius: 4rem 4rem 0 4rem;
+        top: 0.1rem;
     }
 
     &:before {
         top: 0;
         animation-duration: 0.09s;
-        transform: scale(0.9) rotate(-15deg) translate(1px, 0px);
+        transform: scale(0.9) rotate(-15deg) translate(0.1rem, 0);
     }
 }
 
@@ -144,10 +144,9 @@
         max-width: 150rem;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         gap: 5rem;
         &--intro {
-            flex: 1 1 50%;
+            flex: 1;
             box-sizing: border-box;
             display: flex;
             align-items: flex-start;
@@ -184,7 +183,7 @@
         }
 
         &--photo {
-            flex: 1 1 40%;
+            flex: 1;
             box-sizing: border-box;
             display: flex;
             align-items: center;
@@ -206,12 +205,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @include neumorph(false, 38px, 77px, 4rem, $box-shadow-one, $box-shadow-two);
+            @include neumorph(false, 3.8rem, 7.7rem, 4rem, $box-shadow-one, $box-shadow-two);
             transition: all 0.3s ease-in-out;
 
             &:hover {
                 transform: scale(1) translateY(-0.2rem) translateX(-0.2rem);
-                box-shadow: inset 38px 38px 77px $box-shadow-one, inset -38px -38px 77px $box-shadow-two;
+                box-shadow: inset 3.8rem 3.8rem 7.7rem $box-shadow-one, inset -3.8rem -3.8rem 7.7rem $box-shadow-two;
             }
         }
     }

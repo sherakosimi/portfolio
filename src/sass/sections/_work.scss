@@ -13,7 +13,7 @@
     transition: all 0.6s;
     color: $color-white;
     overflow: hidden;
-    @include neumorph(false, 30px, 50px, 2rem, $box-shadow-one, $box-shadow-two);
+    @include neumorph(false, 3rem, 5rem, 2rem, $box-shadow-one, $box-shadow-two);
 
     &--a {
         z-index: 100;
@@ -88,7 +88,7 @@
     &__position {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 0.2rem;
         flex: 1;
 
         &--name {
@@ -103,17 +103,17 @@
     }
 
     &__desc-container {
-        padding: 8px 0px;
+        padding: 0.8rem 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     &__line {
-        margin-top: 7px;
+        margin-top: 0.7rem;
         background-color: $secondary-color;
         width: 100%;
-        min-height: 1px;
+        min-height: 0.1rem;
     }
 
     &__responsibility {
@@ -152,7 +152,7 @@
                 content: "\2022"; /* Unicode bullet symbol */
                 color: $secondary-color;
 
-                padding-right: 10px;
+                padding-right: 1rem;
             }
         }
     }
