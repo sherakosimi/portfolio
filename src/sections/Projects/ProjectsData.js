@@ -1,9 +1,36 @@
 const LifeTrackr = {
-  caseName: "Front-end & UI/UX Case",
-  date: "01/2022 - 04/2022",
   projectName: "LifeTrackr",
   platform: "Mobile App",
-  btnIcon: "bx bx-spa",
+  caseName: "Front-end & UI/UX Case",
+  description: (
+    <p className="popup__description">
+      A cross-platform mobile app created using <span>React Native</span>{" "}
+      framework. <br /> The goal of this app is to offer functionality that aids
+      in the process of taking care of plants and animals. The case is done as a
+      diploma project.
+    </p>
+  ),
+  functionality: [
+    <p className="popup__features--item">
+      <span>Sign Up / Sign In</span> using your email and password. User
+      Authentication is securely provided by JSON WEB Tokens. The API was coded
+      in Python.
+    </p>,
+    <p className="popup__features--item">
+      <span>Add Companions</span> (pet) by providing its name, related notes,
+      and companion type. <br />
+      There are five available companion types in our app: dog, cat, reptile,
+      plant, bird.
+    </p>,
+    <p className="popup__features--item">
+      <span>Link reminders</span> to each companion by specifying the name,
+      frequency, and reminder type and get timely notifications. Reminder types
+      change depending on the companion.
+    </p>,
+  ],
+  btnIcon: <i className="bx bx-spa" />,
+  date: "01/2022 - 04/2022",
+
   techStack: [
     {
       colorFront: { color: "#2A9EBE" },
@@ -53,7 +80,7 @@ const Outdoors = {
   date: "10/2022 - 11/2022",
   projectName: "Outdoors",
   platform: "Web App",
-  btnIcon: "fa-solid fa-suitcase-rolling fa-sm",
+  btnIcon: <i className="fa-solid fa-suitcase-rolling fa-sm" />,
   techStack: [
     {
       colorFront: { color: "blue" },
@@ -103,7 +130,7 @@ const EthWallet = {
   date: "01/2022 - 04/2022",
   projectName: "ETH Wallet",
   platform: "Web APP",
-  btnIcon: " fa-brands fa-ethereum fa-sm",
+  btnIcon: <i className="fa-brands fa-ethereum fa-sm" />,
   platformIcons: ["bx bx-desktop", "bx bxs-devices"],
   techStack: [
     {
@@ -153,7 +180,8 @@ const WorkFlow = {
   caseName: "Full Stack & UI/UX Case",
   date: "09/2021 - 12/2021",
   projectName: "WorkFlow",
-  btnIcon: "fa-regular fa-handshake fa-sm",
+  btnIcon: <i className="fa-regular fa-handshake fa-sm" />,
+
   platform: "Mobile APP",
   techStack: [
     {
@@ -204,7 +232,7 @@ const Portfolio = {
   date: "01/2023 - 02/2023",
   projectName: "Portfolio",
   platform: "Web APP",
-  btnIcon: "fa-solid fa-award fa-sm",
+  btnIcon: <i className="fa-solid fa-award fa-sm" />,
   techStack: [
     {
       colorFront: { color: "blue" },
@@ -249,7 +277,7 @@ const Portfolio = {
   ],
 };
 
-export const projectsData = [
+export const overviewData = [
   LifeTrackr,
   Outdoors,
   EthWallet,

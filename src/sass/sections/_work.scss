@@ -4,6 +4,17 @@
     grid-template-columns: 35rem 35rem 35rem 35rem;
     grid-template-rows: 12rem 12rem 12rem 12rem;
     justify-content: space-between;
+
+    @include respond(phone-land) {
+        grid-template-columns: 35rem;
+        grid-template-rows: 12rem 12rem 12rem 12rem;
+        gap: 18rem;
+        justify-content: center;
+        & > div {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
 }
 
 .item {
@@ -113,6 +124,7 @@
         margin-top: 0.7rem;
         background-color: $secondary-color;
         width: 100%;
+        overflow: hidden;
         min-height: 0.1rem;
     }
 

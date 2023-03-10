@@ -1,9 +1,9 @@
 .form {
-    height: 60rem;
-    width: 95rem;
     display: flex;
     letter-spacing: 0.1rem;
-
+    @include respond(phone-land) {
+        flex-direction: column;
+    }
     &__side {
         flex: 1;
         display: flex;
@@ -13,12 +13,17 @@
         text-align: center;
         line-height: 100%;
         gap: 3rem;
-        padding: 4rem 5rem;
+        padding: 8rem 5rem;
         border: 0.2rem solid $border-color;
+
         &:first-child {
             background: linear-gradient(90deg, #26292d, #2c3036);
             box-shadow: 1.8rem 1.9rem 3.6rem #1e2024, -1.8rem -1.8rem 3.6rem #343a40;
             border-radius: 4rem 0 0 4rem;
+
+            @include respond(phone-land) {
+                border-radius: 4rem 4rem 0 0;
+            }
         }
 
         &:last-child {
@@ -26,6 +31,10 @@
             border-radius: 0 4rem 4rem 0;
             border: 0.2rem solid $border-color;
             border-left: none;
+
+            @include respond(phone-land) {
+                border-radius: 0rem 0 4rem 4rem;
+            }
         }
     }
 
@@ -75,7 +84,7 @@
         font-family: $font-light;
         font-size: 1.5rem;
         color: $color-white;
-        line-height: 135%;
+        line-height: 145%;
     }
 
     &__social {

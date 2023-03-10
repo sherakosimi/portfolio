@@ -23,6 +23,11 @@
     animation-timing-function: ease;
     @include neumorph(false, 2.2rem, 4.6rem, 2.5rem, $box-shadow-one, $box-shadow-two);
     padding: 0 3rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+        border: 2px solid #22242a;
+    }
 }
 
 .nav-list {
@@ -34,6 +39,10 @@
     justify-content: space-between;
 
     font-family: $font-regular;
+    @include respond(phone-land) {
+        display: none;
+    }
+
     &__item {
         display: flex;
         justify-content: center;
@@ -64,7 +73,9 @@
     justify-content: center;
     align-items: center;
     box-sizing: content-box;
-
+    @include respond(phone-land) {
+        display: none;
+    }
     &__background {
         border: 0.1rem solid $border-color;
         overflow: hidden;
@@ -139,59 +150,66 @@
 .hero {
     flex: 1;
     z-index: 100;
-    padding: 20rem 23rem;
-    &__box {
-        max-width: 150rem;
+    padding: 20rem 20rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    @include respond(small-laptop) {
+        padding: 20rem 16rem;
+    }
+    @include respond(phone-land) {
+        //700px
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 8rem;
+    }
+    &__intro {
+        flex: 1;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &__title {
+        width: 100%;
+        color: #fff;
+        background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Biotif-Bold;
+        font-size: 10rem;
+        letter-spacing: -0.17rem;
+        line-height: 110%;
+        user-select: none;
+        -webkit-user-select: none; /*Safari*/
+        -moz-user-select: none;
+    }
+
+    &__subtitle {
+        max-width: 90%;
+        margin: 0.5rem 0.3rem;
+        color: #fff;
+        line-height: 150%;
+        font-family: Biotif-Medium;
+        font-size: 2.2rem;
+    }
+
+    &__photo {
+        flex: 1;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
-        gap: 5rem;
-        &--intro {
-            flex: 1;
-            box-sizing: border-box;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            animation-name: moveInLeft;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-        }
-
-        &--title {
-            width: 100%;
-            color: #fff;
-            background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: Biotif-Bold;
-            font-size: 10rem;
-            letter-spacing: -0.17rem;
-            line-height: 110%;
-            user-select: none;
-            -webkit-user-select: none; /*Safari*/
-            -moz-user-select: none;
-        }
-
-        &--subtitle {
-            max-width: 90%;
-            margin: 0.5rem 0.3rem;
-            color: #fff;
-            line-height: 150%;
-            font-family: Biotif-Medium;
-            font-size: 2.2rem;
-        }
-
-        &--photo {
-            flex: 1;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation-name: moveInRight;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-        }
+        justify-content: center;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     }
 
     &__image {

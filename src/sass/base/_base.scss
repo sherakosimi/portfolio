@@ -15,22 +15,40 @@ html {
     overflow-y: scroll;
 
     @include respond(big-desktop) {
+        //1856px
         font-size: 56%;
     }
     @include respond(desktop) {
+        //1662px
         font-size: 52%;
     }
     @include respond(big-laptop) {
+        //1552px
         font-size: 47%;
     }
     @include respond(laptop) {
-        font-size: 42%;
+        //1392px
+        font-size: 43%;
     }
     @include respond(small-laptop) {
-        font-size: 37%;
+        //1250px
+        font-size: 39%;
     }
     @include respond(tab-land) {
-        font-size: 32%;
+        //1109px
+        font-size: 35%;
+    }
+    @include respond(tab-port) {
+        //1000px
+        font-size: 29%;
+    }
+    @include respond(tab-port-small) {
+        //811px
+        font-size: 25%;
+    }
+    @include respond(phone-land) {
+        //700px
+        font-size: 37%;
     }
 }
 
@@ -51,9 +69,11 @@ body {
     justify-content: center;
     overflow: hidden;
     @include respond(laptop) {
-        padding: 13rem 1rem 1rem 1rem;
+        padding: 10rem 3rem 1rem 3rem;
     }
-
+    @include respond(phone-land) {
+        padding: 10rem 0rem 1rem 0rem;
+    }
     &--contact {
         padding-bottom: 10rem;
     }
@@ -68,6 +88,7 @@ body {
     }
     &__container {
         @include container;
+
         &--about {
             letter-spacing: 1px;
         }

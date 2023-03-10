@@ -35,11 +35,15 @@
         @include btn(4.1rem, 4.1rem, 4.1rem, $tertiary-color);
         background: linear-gradient(145deg, #25292d, #2c3036);
         box-shadow: 6px 6px 9px #23262b, -6px -6px 9px #2f343a;
+        & > i {
+            font-size: 2rem;
+        }
     }
 
     &--source {
         @include btn(4rem, 4rem, 2rem, $color-white);
     }
+
     &--main {
         @include btn(5rem, 18rem, 1.7rem, $tertiary-color);
         margin-top: 4.5rem;
@@ -85,15 +89,24 @@
         }
     }
 
-    &--contact {
-        padding-top: 0.3rem;
-        margin-top: 3rem;
-        @include btn(5rem, 18rem, 1.7rem, $primary-color);
+    &--popup {
+        @include btn(4rem, 16rem, 1.8rem, $color-white);
         background-color: $tertiary-color;
-        text-transform: uppercase;
+        gap: 1rem;
 
+        padding-top: 0.4rem;
         &:hover {
             background-color: $primary-color;
+            color: $tertiary-color;
+        }
+
+        & > span {
+            padding-bottom: 0.4rem;
+            font-size: 2rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: $tertiary-color;
         }
     }

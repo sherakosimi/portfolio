@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { projectsData } from "./ProjectsData";
+import { overviewData } from "./ProjectsData";
 import ProjectPage from "./ProjectPage";
 
 export default function Projects() {
@@ -18,7 +18,7 @@ export default function Projects() {
           <h2 className="heading__tertiary">Projects</h2>
         </div>
         <div className="cover__container">
-          {projectsData.map((project, i) => (
+          {overviewData.map((project, i) => (
             <div className="card" key={i}>
               <div className="card__top" id="web">
                 <h3 className="card__description card__description--front">
@@ -63,7 +63,7 @@ export default function Projects() {
                     className="btn btn--project"
                     onClick={() => onClick(project)}
                   >
-                    <i className={project.btnIcon}></i>
+                    {project.btnIcon}
                   </button>
                 </div>
               </div>

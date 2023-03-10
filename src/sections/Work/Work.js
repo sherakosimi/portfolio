@@ -27,9 +27,7 @@ export default function Work() {
                     </span>
                     <span className="item__position--date">{item.date}</span>
                   </div>
-                  <button className="btn btn--work">
-                    <i className="bx bxs-chevron-right"></i>
-                  </button>
+                  <button className="btn btn--work">{item.icon}</button>
                 </div>
                 <h2 className="item__responsibility">
                   Tools & Responsibilites

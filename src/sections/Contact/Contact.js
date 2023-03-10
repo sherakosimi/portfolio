@@ -13,8 +13,9 @@ export default function Contact() {
             <div className="form__side">
               <h2 className="form__heading">Contact Me</h2>
               <h3 className="form__subheading">
-                Feel free to get in touch with me using the form below. I'd love
-                to hear from you!
+                Let's work together to create something amazing.
+                <br />
+                Contact me to start the journey.
               </h3>
               <div className="form__social">
                 <button className="btn btn--social">
@@ -32,7 +33,6 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-
             <div className="form__side">
               <h2 className="form__heading">Submit Form</h2>
               <h3 className="form__subheading">
@@ -71,8 +71,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <a
-                role="button"
+              <button
                 className="btn btn--main"
                 style={{ margin: 2 }}
                 href="#projects"
@@ -81,7 +80,7 @@ export default function Contact() {
                 <span>
                   <i className="fa-solid fa-chevron-right"></i>
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>

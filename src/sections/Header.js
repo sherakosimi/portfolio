@@ -43,26 +43,25 @@ export default function Header() {
           </div>
         </div>
       </nav>
+
       <div className="hero">
-        <div className="hero__box">
-          <div className="hero__box--intro">
-            <h1 className="hero__box--title">Hello. I'm Sher.</h1>
-            <h1 className="hero__box--title">A Developer.</h1>
-            <span className="hero__box--subtitle">
-              I’m also a designer and general doodler with a keen eye for
-              creating engaging UI, bringing products to life.
+        <div className="hero__intro">
+          <h1 className="hero__title">Hello. I'm Sher.</h1>
+          <h1 className="hero__title">A Developer.</h1>
+          <span className="hero__subtitle">
+            I’m also a designer and general doodler with a keen eye for creating
+            engaging UI, bringing products to life.
+          </span>
+          <a role="button" className="btn btn--main" href="#projects">
+            Advance
+            <span>
+              <i className="fa-solid fa-chevron-right"></i>
             </span>
-            <a role="button" className="btn btn--main" href="#projects">
-              Advance
-              <span>
-                <i className="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-          </div>
-          <div className="hero__box--photo">
-            <div className="hero__image--container">
-              <img src={mainPhoto} alt="Photo1" className="hero__image" />
-            </div>
+          </a>
+        </div>
+        <div className="hero__photo">
+          <div className="hero__image--container">
+            <img src={mainPhoto} alt="Photo1" className="hero__image" />
           </div>
         </div>
       </div>
