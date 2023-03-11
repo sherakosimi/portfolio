@@ -55,7 +55,11 @@
         text-transform: uppercase;
         padding-top: 0.5rem;
         @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
-
+        @include respond(tab-port-small) {
+            //811px
+            margin-top: 7rem;
+            transform: scale(1.5);
+        }
         &::before {
             content: "";
             width: 0rem;

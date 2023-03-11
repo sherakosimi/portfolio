@@ -39,7 +39,7 @@
     justify-content: space-between;
 
     font-family: $font-regular;
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         display: none;
     }
 
@@ -73,7 +73,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: content-box;
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         display: none;
     }
     &__background {
@@ -150,22 +150,19 @@
 .hero {
     flex: 1;
     z-index: 100;
-    padding: 20rem 20rem;
+    padding: 20rem 23rem;
     display: flex;
     align-items: center;
-    gap: 5rem;
 
-    @include respond(small-laptop) {
-        padding: 20rem 16rem;
-    }
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         //700px
         flex-direction: column-reverse;
-        align-items: flex-start;
+        align-items: center;
         gap: 8rem;
+        padding: 20rem 0rem;
     }
     &__intro {
-        flex: 1;
+        flex-basis: 1;
         box-sizing: border-box;
         display: flex;
         align-items: flex-start;
@@ -174,6 +171,12 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(tab-port-small) {
+            //700px
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -190,10 +193,11 @@
         user-select: none;
         -webkit-user-select: none; /*Safari*/
         -moz-user-select: none;
+        white-space: nowrap;
     }
 
     &__subtitle {
-        max-width: 90%;
+        max-width: 80%;
         margin: 0.5rem 0.3rem;
         color: #fff;
         line-height: 150%;
@@ -202,34 +206,33 @@
     }
 
     &__photo {
-        flex: 1;
+        flex-basis: 55rem;
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
     }
-
     &__image {
-        width: 93%;
-        height: 93%;
-        border-radius: 3.3rem;
+        height: 57rem;
+        width: 57rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include neumorph(false, 3.8rem, 7.7rem, 4rem, $box-shadow-one, $box-shadow-two);
+        transition: all 0.3s ease-in-out;
 
-        &--container {
-            height: 55rem;
-            width: 55rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include neumorph(false, 3.8rem, 7.7rem, 4rem, $box-shadow-one, $box-shadow-two);
-            transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1) translateY(-0.2rem) translateX(-0.2rem);
+            box-shadow: inset 3.8rem 3.8rem 7.7rem $box-shadow-one, inset -3.8rem -3.8rem 7.7rem $box-shadow-two;
+        }
 
-            &:hover {
-                transform: scale(1) translateY(-0.2rem) translateX(-0.2rem);
-                box-shadow: inset 3.8rem 3.8rem 7.7rem $box-shadow-one, inset -3.8rem -3.8rem 7.7rem $box-shadow-two;
-            }
+        &--picture {
+            width: 93%;
+            height: 93%;
+            border-radius: 3.3rem;
         }
     }
 }

@@ -40,15 +40,11 @@ html {
     }
     @include respond(tab-port) {
         //1000px
-        font-size: 29%;
+        font-size: 30%;
     }
     @include respond(tab-port-small) {
         //811px
-        font-size: 25%;
-    }
-    @include respond(phone-land) {
-        //700px
-        font-size: 37%;
+        font-size: 42%;
     }
 }
 
@@ -68,11 +64,9 @@ body {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    @include respond(laptop) {
-        padding: 10rem 3rem 1rem 3rem;
-    }
-    @include respond(phone-land) {
-        padding: 10rem 0rem 1rem 0rem;
+
+    @include respond(tab-port-small) {
+        padding: 8rem 2rem 1rem 2rem;
     }
     &--contact {
         padding-bottom: 10rem;

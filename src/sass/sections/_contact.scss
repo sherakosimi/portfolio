@@ -1,9 +1,12 @@
 .form {
     display: flex;
     letter-spacing: 0.1rem;
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         flex-direction: column;
+        margin-top: 5rem;
+        transform: scale(1.2);
     }
+
     &__side {
         flex: 1;
         display: flex;
@@ -21,7 +24,7 @@
             box-shadow: 1.8rem 1.9rem 3.6rem #1e2024, -1.8rem -1.8rem 3.6rem #343a40;
             border-radius: 4rem 0 0 4rem;
 
-            @include respond(phone-land) {
+            @include respond(tab-port-small) {
                 border-radius: 4rem 4rem 0 0;
             }
         }
@@ -32,7 +35,7 @@
             border: 0.2rem solid $border-color;
             border-left: none;
 
-            @include respond(phone-land) {
+            @include respond(tab-port-small) {
                 border-radius: 0rem 0 4rem 4rem;
             }
         }

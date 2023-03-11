@@ -5,14 +5,15 @@
     grid-template-rows: 12rem 12rem 12rem 12rem;
     justify-content: space-between;
 
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         grid-template-columns: 35rem;
         grid-template-rows: 12rem 12rem 12rem 12rem;
-        gap: 18rem;
+        gap: 9rem;
         justify-content: center;
         & > div {
             grid-column-start: 1;
             grid-column-end: 2;
+            transform: scale(1.4);
         }
     }
 }
@@ -24,7 +25,10 @@
     transition: all 0.6s;
     color: $color-white;
     overflow: hidden;
-    @include neumorph(false, 3rem, 5rem, 2rem, $box-shadow-one, $box-shadow-two);
+    @include neumorph(false, 1rem, 3rem, 2rem, $box-shadow-one, $box-shadow-two);
+    &:hover {
+        border: 2px solid #22242a;
+    }
 
     &--a {
         z-index: 100;
@@ -34,7 +38,6 @@
         grid-row-end: 4;
 
         &:hover {
-            transform: translateY(-13rem);
             animation-name: work;
             animation-duration: 0.6s;
             animation-fill-mode: forwards;
@@ -48,7 +51,6 @@
         grid-row-end: 3;
 
         &:hover {
-            transform: translateY(-13rem);
             animation-name: work;
             animation-duration: 0.6s;
             animation-fill-mode: forwards;

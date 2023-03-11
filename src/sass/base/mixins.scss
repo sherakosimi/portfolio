@@ -37,11 +37,13 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    @include respond(phone-land) {
+    @include respond(tab-port-small) {
         //700px
+        margin: 10rem 10rem;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5rem;
+        gap: 13rem;
+        row-gap: 16rem;
     }
 }
 

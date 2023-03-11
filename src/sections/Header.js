@@ -46,8 +46,9 @@ export default function Header() {
 
       <div className="hero">
         <div className="hero__intro">
-          <h1 className="hero__title">Hello. I'm Sher.</h1>
-          <h1 className="hero__title">A Developer.</h1>
+          <h1 className="hero__title">
+            <span>Hello</span> I'm Sher. <br />A Developer.
+          </h1>
           <span className="hero__subtitle">
             I’m also a designer and general doodler with a keen eye for creating
             engaging UI, bringing products to life.
@@ -60,8 +61,12 @@ export default function Header() {
           </a>
         </div>
         <div className="hero__photo">
-          <div className="hero__image--container">
-            <img src={mainPhoto} alt="Photo1" className="hero__image" />
+          <div className="hero__image">
+            <img
+              src={mainPhoto}
+              alt="Photo1"
+              className="hero__image--picture"
+            />
           </div>
         </div>
       </div>
