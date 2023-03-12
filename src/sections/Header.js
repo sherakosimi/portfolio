@@ -34,12 +34,24 @@ export default function Header() {
         </div>
         <div className="social">
           <div className="social__container">
-            <button className="btn btn--social">
+            <a
+              role="button"
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://github.com/sherakosimi"
+              className="btn btn--social"
+            >
               <i className="bx bxl-github bx-tada-hover"></i>
-            </button>
-            <button className="btn btn--social">
+            </a>
+            <a
+              role="button"
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://www.linkedin.com/in/shermukhammad-kosimi/"
+              className="btn btn--social"
+            >
               <i className="bx bxl-linkedin bx-tada-hover"></i>
-            </button>
+            </a>
           </div>
         </div>
       </nav>

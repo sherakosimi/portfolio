@@ -81,6 +81,33 @@ const Outdoors = {
   projectName: "Outdoors",
   platform: "Web App",
   btnIcon: <i className="fa-solid fa-suitcase-rolling fa-sm" />,
+  description: (
+    <p className="popup__description">
+      A cross-platform mobile app created using <span>React Native</span>{" "}
+      framework. <br /> The goal of this app is to offer functionality that aids
+      in the process of taking care of plants and animals. The case is done as a
+      diploma project.
+    </p>
+  ),
+  functionality: [
+    <p className="popup__features--item">
+      <span>Sign Up / Sign In</span> using your email and password. User
+      Authentication is securely provided by JSON WEB Tokens. The API was coded
+      in Python.
+    </p>,
+    <p className="popup__features--item">
+      <span>Add Companions</span> (pet) by providing its name, related notes,
+      and companion type. <br />
+      There are five available companion types in our app: dog, cat, reptile,
+      plant, bird.
+    </p>,
+    <p className="popup__features--item">
+      <span>Link reminders</span> to each companion by specifying the name,
+      frequency, and reminder type and get timely notifications. Reminder types
+      change depending on the companion.
+    </p>,
+  ],
+
   techStack: [
     {
       colorFront: { color: "blue" },

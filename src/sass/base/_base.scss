@@ -46,6 +46,9 @@ html {
         //811px
         font-size: 42%;
     }
+    @include respond(phone) {
+        font-size: 36%;
+    }
 }
 
 body {
@@ -66,7 +69,7 @@ body {
     overflow: hidden;
 
     @include respond(tab-port-small) {
-        padding: 8rem 2rem 1rem 2rem;
+        padding: 7rem 2rem 1rem 2rem;
     }
     &--contact {
         padding-bottom: 10rem;

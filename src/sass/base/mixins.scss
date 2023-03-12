@@ -39,18 +39,18 @@
 
     @include respond(tab-port-small) {
         //700px
-        margin: 10rem 10rem;
+        margin: 10rem 0rem;
         flex-wrap: wrap;
         justify-content: center;
         gap: 13rem;
-        row-gap: 16rem;
+        row-gap: 18rem;
     }
 }
 
 /// MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone-land {
-        @media (max-width: $bp-phone-land) {
+    @if $breakpoint == phone {
+        @media (max-width: $bp-phone) {
             @content;
         }
     }
