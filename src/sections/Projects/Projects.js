@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { overviewData } from "./ProjectsData";
+import { description, overview } from "./ProjectsData";
 import ProjectPage from "./ProjectPage";
 
 export default function Projects() {
-  const [isOpen, setOpen] = useState(false);
+  const [projectID, setProjectID] = useState(null);
 
-  const onClick = (project) => {
-    setOpen(true);
+  const onClick = (id) => {
+    setProjectID(id);
   };
 
-  console.log(isOpen);
+  console.log(overview);
   return (
     <section id="projects" className="section">
       <div className="cover">
@@ -18,7 +18,7 @@ export default function Projects() {
           <h2 className="heading__tertiary">Projects</h2>
         </div>
         <div className="cover__container">
-          {overviewData.map((project, i) => (
+          {description.map((project, i) => (
             <div className="card" key={i}>
               <div className="card__top" id="web">
                 <h3 className="card__description card__description--front">
@@ -31,20 +31,14 @@ export default function Projects() {
                   {project.techStack.map((item, k) => (
                     <div key={k}>
                       <li className="card__item card__item--front">
-                        <span
-                          className="card__icon card__icon--front"
-                          style={item.colorFront}
-                        >
-                          <i className={item.iconFront}></i>
+                        <span className="card__icon card__icon--front">
+                          {item.iconFront}
                         </span>
                         {item.nameFront}
                       </li>
                       <li className="card__item card__item--back">
                         <span className="card__icon card__icon--back">
-                          <i
-                            className={item.iconBack}
-                            style={item.colorBack}
-                          ></i>
+                          {item.iconBack}
                         </span>
                         {item.nameBack}
                       </li>
@@ -61,12 +55,13 @@ export default function Projects() {
                 <div className="card__more">
                   <button
                     className="btn btn--project"
-                    onClick={() => onClick(project)}
+                    onClick={() => onClick(i)}
                   >
                     {project.btnIcon}
                   </button>
                 </div>
               </div>
+              <ProjectPage id={projectID} setProjectID={setProjectID} />
             </div>
           ))}
         </div>

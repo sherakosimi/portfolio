@@ -38,6 +38,7 @@
         grid-row-end: 4;
 
         &:hover {
+            transform: translateY(-13rem);
             animation-name: work;
             animation-duration: 0.6s;
             animation-fill-mode: forwards;
@@ -51,6 +52,7 @@
         grid-row-end: 3;
 
         &:hover {
+            transform: translateY(-13rem);
             animation-name: work;
             animation-duration: 0.6s;
             animation-fill-mode: forwards;

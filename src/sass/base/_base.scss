@@ -70,6 +70,10 @@ body {
 
     @include respond(tab-port-small) {
         padding: 7rem 2rem 1rem 2rem;
+        overflow: visible;
+    }
+    @include respond(phone) {
+        padding: 7rem 0rem 1rem 0rem;
     }
     &--contact {
         padding-bottom: 10rem;

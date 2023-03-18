@@ -38,6 +38,10 @@ export default function About() {
                 <h3 className="bio__section--text">Background</h3>
                 <div className="bio__section--degree">
                   <div className="bio__section--item">
+                    <i className="fa-solid fa-certificate"></i>
+                    <span>Age:</span>23 y.o
+                  </div>
+                  <div className="bio__section--item">
                     <i className="fa-solid fa-graduation-cap"></i>
                     <span>Degree:</span>B.S in Computer Science (WIT)
                   </div>
@@ -69,10 +73,6 @@ export default function About() {
                     >
                       <i className="bx bxl-python"></i>
                     </div>
-                  </div>
-                  <div className="bio__section--item">
-                    <i className="fa-solid fa-certificate"></i>
-                    <span>Certifications:</span>23 y.o
                   </div>
                 </div>
               </div>
