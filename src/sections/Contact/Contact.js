@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Contact() {
   return (
@@ -24,7 +24,6 @@ export default function Contact() {
                 <button className="btn btn--social">
                   <i className="bx bxl-linkedin bx-tada-hover"></i>
                 </button>
-
                 <button className="btn btn--social">
                   <i className="bx bxl-instagram  bx-tada-hover"></i>
                 </button>
@@ -61,8 +60,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="form__group">
-                  <input
-                    type="text"
+                  <textarea
                     required=""
                     autoComplete="off"
                     className="form__group--input"

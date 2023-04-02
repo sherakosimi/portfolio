@@ -61,11 +61,11 @@ export default function Projects() {
                   </button>
                 </div>
               </div>
-              <ProjectPage id={projectID} setProjectID={setProjectID} />
             </div>
           ))}
         </div>
       </div>
+      <ProjectPage id={projectID} setProjectID={setProjectID} />
     </section>
   );
 }

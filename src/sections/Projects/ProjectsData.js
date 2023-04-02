@@ -1,5 +1,3 @@
-import { useMemo } from "react";
-
 const LifeTrackr = {
   base: {
     projectName: "LifeTrackr",
@@ -12,28 +10,28 @@ const LifeTrackr = {
   overview: {
     description: (
       <p className="popup__description">
-        A cross-platform mobile app created using <span>React Native</span>{" "}
-        framework. <br /> The goal of this app is to offer functionality that
-        aids in the process of taking care of plants and animals. The case is
-        done as a diploma project.
+        A cross-platform mobile app created using the <span>React Native</span>{" "}
+        framework. <br />
+        The goal of the app is to aid in the process of taking care of plants
+        and animals, making it an ideal app for pet owners and gardeners.
       </p>
     ),
     functionality: [
       <p className="popup__features--item">
-        <span>Sign Up / Sign In</span> using your email and password. User
-        Authentication is securely provided by JSON WEB Tokens. The API was
-        coded in Python.
+        <span>User authentication:</span> Users can sign up and sign in using
+        their email and password. User authentication is securely provided by
+        JSON WEB Tokens. The API was coded in Python.
       </p>,
       <p className="popup__features--item">
-        <span>Add Companions</span> (pet) by providing its name, related notes,
-        and companion type. <br />
-        There are five available companion types in our app: dog, cat, reptile,
-        plant, bird.
+        <span>Add companions:</span> Users can add companions such as pets or
+        plants by providing their names, related notes, and companion types.
+        There are five available companion types in the app: dog, cat, reptile,
+        plant, and bird.
       </p>,
       <p className="popup__features--item">
-        <span>Link reminders</span> to each companion by specifying the name,
-        frequency, and reminder type and get timely notifications. Reminder
-        types change depending on the companion.
+        <span>Set reminders:</span> Users can link reminders to each companion
+        by specifying the name, frequency, and reminder type and get timely
+        notifications. Reminder types change depending on the companion.
       </p>,
     ],
   },
@@ -109,28 +107,25 @@ const Outdoors = {
   overview: {
     description: (
       <p className="popup__description">
-        A cross-platform mobile app created using <span>React Native</span>{" "}
-        framework. <br /> The goal of this app is to offer functionality that
-        aids in the process of taking care of plants and animals. The case is
-        done as a diploma project.
+        This project is a UI/UX web application developed using
+        <span> React JS and SCSS </span>. The main objective of this project is
+        to create a visually appealing and user-friendly interface for the web
+        application.
       </p>
     ),
     functionality: [
       <p className="popup__features--item">
-        <span>Sign Up / Sign In</span> using your email and password. User
-        Authentication is securely provided by JSON WEB Tokens. The API was
-        coded in Python.
+        <span>Animation effects:</span> The project showcases various animation
+        effects on website components, providing an engaging user experience.
       </p>,
       <p className="popup__features--item">
-        <span>Add Companions</span> (pet) by providing its name, related notes,
-        and companion type. <br />
-        There are five available companion types in our app: dog, cat, reptile,
-        plant, bird.
+        <span>Responsive design:</span> The app has been designed to work
+        seamlessly on mobile and desktop devices, providing a consistent user
+        experience across all devices. <br />
       </p>,
       <p className="popup__features--item">
-        <span>Link reminders</span> to each companion by specifying the name,
-        frequency, and reminder type and get timely notifications. Reminder
-        types change depending on the companion.
+        <span>Simple UI:</span> The project has a simple user interface that
+        makes it easy for users to navigate and interact with the app. <br />
       </p>,
     ],
   },
@@ -206,28 +201,26 @@ const EthWallet = {
   overview: {
     description: (
       <p className="popup__description">
-        A cross-platform mobile app created using <span>React Native</span>{" "}
-        framework. <br /> The goal of this app is to offer functionality that
-        aids in the process of taking care of plants and animals. The case is
-        done as a diploma project.
+        A development and UI/UX concept of a web ETH wallet developed with{" "}
+        <span>ReactJS</span>. The project involves the creation of a
+        user-friendly and visually appealing interface for managing and
+        accessing Ethereum transactions.
       </p>
     ),
     functionality: [
       <p className="popup__features--item">
-        <span>Sign Up / Sign In</span> using your email and password. User
-        Authentication is securely provided by JSON WEB Tokens. The API was
-        coded in Python.
+        <span>User authentication:</span> The project uses Firebase
+        authentication by email, providing secure access to the wallet.
       </p>,
       <p className="popup__features--item">
-        <span>Add Companions</span> (pet) by providing its name, related notes,
-        and companion type. <br />
-        There are five available companion types in our app: dog, cat, reptile,
-        plant, bird.
+        <span>Responsive design:</span> The app has been designed to work
+        seamlessly on mobile and desktop devices, providing a consistent user
+        experience across all devices.
       </p>,
       <p className="popup__features--item">
-        <span>Link reminders</span> to each companion by specifying the name,
-        frequency, and reminder type and get timely notifications. Reminder
-        types change depending on the companion.
+        <span>Simple UI:</span> The project has a simple and intuitive user
+        interface that makes it easy for users to navigate and interact with the
+        wallet.
       </p>,
     ],
   },
@@ -297,28 +290,32 @@ const WorkFlow = {
   overview: {
     description: (
       <p className="popup__description">
-        A cross-platform mobile app created using <span>React Native</span>{" "}
-        framework. <br /> The goal of this app is to offer functionality that
-        aids in the process of taking care of plants and animals. The case is
-        done as a diploma project.
+        Task Manager is an enhanced task manager built with{" "}
+        <span>React Native and Expo</span> frameworks. The app can be used both
+        as a personal and a company's task manager. The main goal of this
+        project is to offer abilities to chat, to share projects and tasks with
+        your friends or colleagues
       </p>
     ),
     functionality: [
       <p className="popup__features--item">
-        <span>Sign Up / Sign In</span> using your email and password. User
-        Authentication is securely provided by JSON WEB Tokens. The API was
-        coded in Python.
+        <span>User authentication:</span> The app uses Firebase authentication
+        by email to provide secure access to the task manager.
       </p>,
       <p className="popup__features--item">
-        <span>Add Companions</span> (pet) by providing its name, related notes,
-        and companion type. <br />
-        There are five available companion types in our app: dog, cat, reptile,
-        plant, bird.
+        <span>Cloud database:</span> The app uses Firebase cloud database to
+        store users, shared and individual projects and tasks, ensuring data
+        security and accessibility.
       </p>,
       <p className="popup__features--item">
-        <span>Link reminders</span> to each companion by specifying the name,
-        frequency, and reminder type and get timely notifications. Reminder
-        types change depending on the companion.
+        <span>Chatting:</span> The app provides real-time chatting functionality
+        using Firebase real-time database, enabling users to communicate with
+        each other seamlessly.
+      </p>,
+      <p className="popup__features--item">
+        <span>Enhanced task management:</span>The app offers enhanced task
+        management features, such as sharing tasks and projects with colleagues,
+        assigning tasks, setting deadlines, and more.
       </p>,
     ],
   },
@@ -394,20 +391,18 @@ const Portfolio = {
     ),
     functionality: [
       <p className="popup__features--item">
-        <span>Sign Up / Sign In</span> using your email and password. User
-        Authentication is securely provided by JSON WEB Tokens. The API was
-        coded in Python.
+        <span> Custom Components & Animations:</span> The website showcases my
+        skills and creativity through custom-designed components and smooth
+        animations.
       </p>,
       <p className="popup__features--item">
-        <span>Add Companions</span> (pet) by providing its name, related notes,
-        and companion type. <br />
-        There are five available companion types in our app: dog, cat, reptile,
-        plant, bird.
+        <span>Neumorphic UI/UX Style</span> The neumorphic design style gives
+        the portfolio a modern and professional look.
       </p>,
       <p className="popup__features--item">
-        <span>Link reminders</span> to each companion by specifying the name,
-        frequency, and reminder type and get timely notifications. Reminder
-        types change depending on the companion.
+        <span>Responsive Design</span> The portfolio is optimized for various
+        devices and screen sizes to ensure a seamless experience for all
+        visitors.
       </p>,
     ],
   },
