@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const socialButtons = [
   {
     icon: "bx bx-envelope bx-tada-hover",
@@ -24,6 +25,7 @@ const socialButtons = [
 export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "gmail",
@@ -33,12 +35,10 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          toast.success(
-            "Thank you for your message, I will try to respond as soon as possible"
-          );
+          toast.success("Thank you for your message!");
         },
         (error) => {
-          console.log(error.text);
+          toast.error(error.text);
         }
       );
     e.target.reset();
@@ -117,7 +117,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="btn btn--main"
+                className="btn btn--submit"
                 style={{ margin: 2 }}
                 href="#projects"
               >

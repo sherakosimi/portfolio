@@ -5,6 +5,13 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="navbar">
+        <div className="navbar__hamburger">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
         <ul className="nav-list">
           <li className="nav-list__item">
             <a href="#projects" className="nav-list__title">

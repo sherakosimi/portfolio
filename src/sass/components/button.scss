@@ -114,4 +114,52 @@
             color: $tertiary-color;
         }
     }
+
+    &--submit {
+        @include btn(5rem, 18rem, 1.7rem, $tertiary-color);
+        gap: 1rem;
+        padding: 0rem 1rem;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        text-transform: uppercase;
+        padding-top: 0.5rem;
+        @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
+        @include respond(tab-port-small) {
+            //811px
+            margin-top: 10rem;
+            transform: scale(1.2);
+        }
+        &::before {
+            content: "";
+            width: 0rem;
+            height: 5rem;
+            border-radius: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right, $secondary-color 0%, $tertiary-color 100%);
+            transition: 0.5s ease;
+            display: block;
+            z-index: -1;
+        }
+        &:hover {
+            color: $primary-color;
+            border: 2px solid $primary-color;
+        }
+        &:hover::before {
+            width: 18rem;
+        }
+
+        & > span {
+            padding-bottom: 0.2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            transition: 0.5s ease;
+        }
+        &:hover span {
+            animation: advanceIcon 1.5s infinite;
+        }
+    }
 }

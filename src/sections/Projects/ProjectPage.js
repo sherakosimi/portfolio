@@ -46,11 +46,11 @@ export default function ProjectPage(props) {
               <div className="popup__features">
                 <h3 className="popup__functionality">Functionality:</h3>
                 {overview[id].functionality.map((i, key) => (
-                  <div>{i}</div>
+                  <div key={key}>{i}</div>
                 ))}
               </div>
               <div>
-                <h3 className="popup__functionality">Tech:</h3>
+                {/* <h3 className="popup__functionality">Tech:</h3>
                 <div className="popup__cover">
                   <ul className="list">
                     <li className="list__item">
@@ -108,7 +108,7 @@ export default function ProjectPage(props) {
                       </span>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

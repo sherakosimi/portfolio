@@ -28,6 +28,15 @@
     &:hover {
         border: 2px solid #22242a;
     }
+
+    &__hamburger {
+        font-size: 1rem;
+        flex: 1;
+        display: none;
+        @include respond(tab-port-small) {
+            display: inline;
+        }
+    }
 }
 
 .nav-list {
