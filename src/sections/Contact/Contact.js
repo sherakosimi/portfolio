@@ -1,5 +1,6 @@
 import React from "react";
-
+import emailjs from "emailjs-com";
+import { toast, ToastContainer } from "react-toastify";
 const socialButtons = [
   {
     icon: "bx bx-envelope bx-tada-hover",
@@ -21,6 +22,28 @@ const socialButtons = [
 ];
 
 export default function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "gmail",
+        "application_template",
+        e.target,
+        "user_Ra8roTJE5NBAXZq7eRSsY"
+      )
+      .then(
+        (result) => {
+          toast.success(
+            "Thank you for your message, I will try to respond as soon as possible"
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   const onClick = (url) => {
     window.open(url, "_blank");
   };
@@ -53,7 +76,7 @@ export default function Contact() {
                 ))}
               </div>
             </div>
-            <div className="form__side">
+            <form className="form__side" onSubmit={sendEmail}>
               <h2 className="form__heading">Submit Form</h2>
               <h3 className="form__subheading">
                 Feel free to get in touch with me using the form below. I'd love
@@ -63,6 +86,7 @@ export default function Contact() {
                 <div className="form__group">
                   <input
                     type="text"
+                    name="name"
                     required=""
                     autoComplete="off"
                     spellCheck="false"
@@ -72,7 +96,8 @@ export default function Contact() {
                 </div>
                 <div className="form__group">
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     required=""
                     spellCheck="false"
                     autoComplete="off"
@@ -82,6 +107,7 @@ export default function Contact() {
                 </div>
                 <div className="form__group">
                   <textarea
+                    name="subject"
                     required=""
                     autoComplete="off"
                     className="form__group--input"
@@ -90,6 +116,7 @@ export default function Contact() {
                 </div>
               </div>
               <button
+                type="submit"
                 className="btn btn--main"
                 style={{ margin: 2 }}
                 href="#projects"
@@ -99,10 +126,11 @@ export default function Contact() {
                   <i className="fa-solid fa-chevron-right"></i>
                 </span>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 }

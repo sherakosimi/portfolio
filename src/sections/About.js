@@ -49,6 +49,7 @@ export default function About() {
                     <span
                       className="bio__heading--icon"
                       onClick={() => onClick(btn.href)}
+                      key={key}
                     >
                       <i className={btn.icon}></i>
                     </span>
