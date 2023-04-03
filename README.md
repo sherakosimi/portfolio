@@ -1,74 +1,55 @@
-# Getting Started with Create React App
+# Portfolio - ReactJS and SCSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This [web portfolio](https://portfolio-sher.web.app/) is built using React JS and SCSS, and features custom components and sleek animations in a neumorphic UI/UX style.
 
-## Available Scripts
+Link - [https://portfolio-sher.web.app/](https://portfolio-sher.web.app/)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is a personal portfolio showcasing your career experience and projects. The web portfolio is developed using React JS and SCSS, with custom components and pure SCSS animations in a neumorphic UI/UX style. The responsive design ensures that the portfolio is accessible and user-friendly across all devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Custom Components & Animations**: The website showcases my skills and creativity through custom-designed components and smooth animations.
+- **Neumorphic UI/UX Style**: The neumorphic design style gives the portfolio a modern and professional look.
+- **Responsive Design**: The portfolio is optimized for various devices and screen sizes to ensure a seamless experience for all visitors.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJS
+- SCSS
+- EmailJS
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the portfolio project locally, you need to install the following tools:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Serial No | Software | Version   | Serial No                                          |
+| :-------- | :------- | :-------- | :------------------------------------------------- |
+| 1         | Node.js  | >= 6.9.1  | [Install Node.js](https://nodejs.org/en/download/) |
+| 2         | npm      | >= 3.10.8 | [Install NPM](https://www.npmjs.com/get-npm)       |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Follow these steps to install the project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repo with `git clone [REPO_URL]`
+2. Switch to the project's root directory in terminal
+3. Install the dependencies by running `npm install`
+4. Once the dependencies are installed, start the server by running `npm start`
+5. The app will run in development mode at http://localhost:3000/
+6. The page will reload automatically when you make changes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Color Reference
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The following color palette was used in the Animated Web App:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Color           | Hex Code                                                         |
+| --------------- | ---------------------------------------------------------------- |
+| Primary Color   | ![#292d32](https://via.placeholder.com/10/292d32?text=+) #292d32 |
+| Secondary Color | ![#cfee9e](https://via.placeholder.com/10/cfee9e?text=+) #cfee9e |
+| Tertiary Color  | ![#dfcc62](https://via.placeholder.com/10/dfcc62?text=+) #dfcc62 |
 
-## Learn More
+## Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here
-: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-![lifetrackrReminder](https://user-images.githubusercontent.com/66219903/221587332-f4aa3e55-8a09-4e3e-a9d2-fcb27a99db3d.png)
-
+This project was created by [**SHER KOSIMI**](https://github.com/sherakosimi) for personal purposes. You are free to use the webpage for both personal and commercial use, but please do not claim it as your own design. A credit to the original author, Shera Kosimi, is appreciated.

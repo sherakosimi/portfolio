@@ -383,10 +383,10 @@ const Portfolio = {
   overview: {
     description: (
       <p className="popup__description">
-        A cross-platform mobile app created using <span>React Native</span>{" "}
-        framework. <br /> The goal of this app is to offer functionality that
-        aids in the process of taking care of plants and animals. The case is
-        done as a diploma project.
+        Welcome to my personal portfolio, where you can explore my career
+        experience and the projects that I have worked on. This web portfolio is
+        built using <span>React JS and SCSS</span>, and features custom
+        components and sleek animations in a neumorphic UI/UX style.
       </p>
     ),
     functionality: [
