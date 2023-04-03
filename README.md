@@ -1,12 +1,14 @@
 # Portfolio - ReactJS and SCSS
 
+THIS PROJECT IS CURRENTLY IN THE FINAL STAGES OF DEVELOPMENT
+
 This [web portfolio](https://portfolio-sher.web.app/) is built using React JS and SCSS, and features custom components and sleek animations in a neumorphic UI/UX style.
 
 Link - [https://portfolio-sher.web.app/](https://portfolio-sher.web.app/)
 
 ## Description
 
-This is a personal portfolio showcasing your career experience and projects. The web portfolio is developed using React JS and SCSS, with custom components and pure SCSS animations in a neumorphic UI/UX style. The responsive design ensures that the portfolio is accessible and user-friendly across all devices.
+This is a personal portfolio showcasing my career experience and projects. The web portfolio is developed using React JS and SCSS, with custom components and pure SCSS animations in a neumorphic UI/UX style. The responsive design ensures that the portfolio is accessible and user-friendly across all devices.
 
 ## Features
 
