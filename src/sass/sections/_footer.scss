@@ -1,6 +1,65 @@
 .footer {
-    background-color: white;
-    padding: 10rem 0;
-    font-size: 1.4rem;
-    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        padding: 2rem 3rem;
+        width: 90vw;
+        display: flex;
+        align-items: row;
+        justify-content: space-between;
+        @include neumorph(false, 2.2rem, 4.6rem, 2.5rem, $box-shadow-one, $box-shadow-two);
+        flex-wrap: wrap;
+    }
+
+    &__name {
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-family: Biotif-Bold;
+        color: $color-white;
+    }
+
+    &__menu {
+        display: block;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 42rem;
+        font-size: 1.8rem;
+        font-family: $font-regular;
+
+        &--item {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: white;
+                transition: transform 0.5s;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $secondary-color;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 1rem;
+        border-top: 0.1rem solid $secondary-color;
+        display: flex;
+        padding-top: 1.5rem;
+        width: 90vw;
+        justify-content: space-between;
+
+        &--copyright {
+            letter-spacing: 0.1rem;
+            font-family: $font-light;
+            font-size: 1.5rem;
+            color: $color-white;
+        }
+    }
 }

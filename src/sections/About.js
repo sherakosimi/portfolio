@@ -1,6 +1,31 @@
 import React from "react";
 import glasses from "../img/photoshoot.PNG";
+
+const socialButtons = [
+  {
+    icon: "fa-regular fa-envelope",
+    href: "mailto:sherakosimi@gmail.com",
+    //fa-regular fa-envelope
+  },
+  {
+    icon: "fa-brands fa-linkedin-in",
+    href: "https://www.linkedin.com/in/shermukhammad-kosimi/",
+  },
+  {
+    icon: "fa-brands fa-instagram",
+    href: "https://www.instagram.com/sherakosimi/",
+  },
+  {
+    icon: "fa-brands fa-github",
+    href: "https://github.com/sherakosimi",
+  },
+];
+
 export default function About() {
+  const onClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="about" className="section">
       <div className="cover cover--noshadow">
@@ -20,18 +45,14 @@ export default function About() {
                 <h2 className="bio__heading--name">Sher Kosimi</h2>
                 <h2 className="bio__heading--whoami">Software Engineer</h2>
                 <div className="bio__heading--social">
-                  <span className="bio__heading--icon">
-                    <i className="fa-regular fa-envelope"></i>
-                  </span>
-                  <span className="bio__heading--icon">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                  </span>
-                  <span className="bio__heading--icon">
-                    <i className="fa-brands fa-instagram"></i>
-                  </span>
-                  <span className="bio__heading--icon">
-                    <i className="fa-brands fa-github"></i>
-                  </span>
+                  {socialButtons?.map((btn, key) => (
+                    <span
+                      className="bio__heading--icon"
+                      onClick={() => onClick(btn.href)}
+                    >
+                      <i className={btn.icon}></i>
+                    </span>
+                  ))}
                 </div>
               </div>
               <div className="bio__section">

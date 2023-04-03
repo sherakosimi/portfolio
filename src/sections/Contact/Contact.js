@@ -1,6 +1,30 @@
 import React from "react";
 
+const socialButtons = [
+  {
+    icon: "bx bx-envelope bx-tada-hover",
+    href: "mailto:sherakosimi@gmail.com",
+  },
+
+  {
+    icon: "bx bxl-linkedin bx-tada-hover",
+    href: "https://www.linkedin.com/in/shermukhammad-kosimi/",
+  },
+  {
+    icon: "bx bxl-instagram  bx-tada-hover",
+    href: "https://www.instagram.com/sherakosimi/",
+  },
+  {
+    icon: "bx bxl-telegram  bx-tada-hover",
+    href: "https://t.me/sherakosimi",
+  },
+];
+
 export default function Contact() {
+  const onClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="contact" className="section section--contact">
       <div className="cover cover--noshadow">
@@ -18,18 +42,15 @@ export default function Contact() {
                 Contact me to start the journey.
               </h3>
               <div className="form__social">
-                <button className="btn btn--social">
-                  <i className="bx bx-envelope bx-tada-hover"></i>
-                </button>
-                <button className="btn btn--social">
-                  <i className="bx bxl-linkedin bx-tada-hover"></i>
-                </button>
-                <button className="btn btn--social">
-                  <i className="bx bxl-instagram  bx-tada-hover"></i>
-                </button>
-                <button className="btn btn--social">
-                  <i className="bx bxl-telegram  bx-tada-hover"></i>
-                </button>
+                {socialButtons?.map((btn, key) => (
+                  <button
+                    key={key}
+                    className="btn btn--social"
+                    onClick={() => onClick(btn.href)}
+                  >
+                    <i className={btn.icon}></i>
+                  </button>
+                ))}
               </div>
             </div>
             <div className="form__side">
@@ -68,7 +89,6 @@ export default function Contact() {
                   />
                 </div>
               </div>
-
               <button
                 className="btn btn--main"
                 style={{ margin: 2 }}

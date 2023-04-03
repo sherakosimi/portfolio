@@ -111,20 +111,6 @@ export default function ProjectPage(props) {
                 </div>
               </div>
             </div>
-            <div className="popup__screens">
-              <img
-                loading="lazy"
-                src={screen}
-                className="popup__screens--img1"
-                alt=""
-              />
-              <img
-                src={screen2}
-                loading="lazy"
-                className="popup__screens--img2"
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </div>

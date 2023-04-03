@@ -52,6 +52,7 @@
         }
 
         &--icon {
+            cursor: pointer;
             transition: all 0.2s ease;
             &:hover {
                 color: $tertiary-color;
