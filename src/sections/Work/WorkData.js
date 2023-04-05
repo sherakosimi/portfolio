@@ -12,7 +12,7 @@ const OnePacific = {
     "Excel",
     "Redux",
   ],
-  style: "item item--a",
+  style: "work work--1",
 };
 
 const LifePod = {
@@ -22,7 +22,7 @@ const LifePod = {
   date: "01/2021 - 05/2021",
   icon: <i class="fa-solid fa-vial-virus"></i>,
   tools: ["Java", "Selenium Testing", "Jenkins", "Jira (Agile)", "AWS", "HTML"],
-  style: "item item--b",
+  style: "work work--2",
 };
 
 const DCity = {
@@ -39,7 +39,7 @@ const DCity = {
     "Figma (UI/UX)",
     "Redux",
   ],
-  style: "item item--c",
+  style: "work work--3",
 };
 
 const Brainnest = {
@@ -56,7 +56,7 @@ const Brainnest = {
     "Excel",
     "Redux",
   ],
-  style: "item item--d",
+  style: "work work--4",
 };
 
 export const workData = [OnePacific, LifePod, DCity, Brainnest];
