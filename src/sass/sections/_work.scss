@@ -25,7 +25,11 @@
     &--4 {
         align-self: flex-start;
     }
-
+    @include respond(tab-port-small) {
+        align-self: center;
+        margin: 0;
+        transform: scale(1.2);
+    }
     &:hover {
         max-height: 25rem;
         border: 2px solid #22242a;
@@ -113,7 +117,6 @@
             &::before {
                 content: "\2022"; /* Unicode bullet symbol */
                 color: $secondary-color;
-
                 padding-right: 1rem;
             }
         }

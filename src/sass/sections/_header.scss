@@ -203,15 +203,28 @@
         -webkit-user-select: none; /*Safari*/
         -moz-user-select: none;
         white-space: nowrap;
+        @include respond(tab-port-small) {
+            //700px
+            font-size: 12rem;
+        }
+        @include respond(tab-port-small) {
+            //700px
+            font-size: 9rem;
+        }
     }
 
     &__subtitle {
         max-width: 70%;
-        margin: 0.5rem 0.3rem;
+        margin: 0.8rem 0.3rem;
         color: #fff;
         line-height: 150%;
         font-family: $font-regular;
         font-size: 2.2rem;
+
+        @include respond(tab-port-small) {
+            //700px
+            font-size: 2.4rem;
+        }
     }
 
     &__photo {

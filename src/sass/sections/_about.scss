@@ -7,10 +7,13 @@
     padding: 3rem 4rem;
     position: relative;
     @include respond(tab-port-small) {
-        margin-top: 20rem;
+        margin-top: 25rem;
+        transform: scale(1.4);
+    }
+    @include respond(phone) {
+        margin-top: 10rem;
         transform: scale(1.2);
     }
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -154,7 +157,7 @@
     width: 50rem;
     padding: 3rem 4rem;
     @include respond(tab-port-small) {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
     &__heading {
         font-size: 3.9rem;
@@ -183,7 +186,7 @@
     @include neumorph(true, 1.8rem, 3.6rem, 4rem, #202428, #32363d);
     border: 0.3rem solid $border-color;
     @include respond(tab-port-small) {
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
     &__container {
         margin-top: 2rem;

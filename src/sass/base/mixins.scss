@@ -39,11 +39,10 @@
 
     @include respond(tab-port-small) {
         //700px
-        margin: 10rem 0rem;
+        margin: 12rem 0rem;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 13rem;
-        row-gap: 18rem;
+        gap: 30rem 20rem;
     }
 }
 

@@ -1,13 +1,14 @@
 .card {
-    width: 27rem;
+    width: 28rem;
     height: 45rem;
     padding: 2rem 2rem;
     position: relative;
+
     @include neumorph(false, 1.6rem, 3.6rem, 2rem, #202327, #32373d);
     background: linear-gradient(145deg, #25292d, #2c3036);
 
     @include respond(tab-port-small) {
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
 
     &__top {
@@ -137,7 +138,7 @@
         padding: 0 0.5rem;
         text-align: start;
         margin-top: 2.1rem;
-        font-family: Biotif-Italic;
+        font-family: $font-bold;
         font-size: 1.1rem;
         color: #898a89;
         opacity: 0;
@@ -152,7 +153,7 @@
         top: 34rem;
         left: 2rem;
         display: flex;
-        width: 23rem;
+        width: 25rem;
         justify-content: center;
         align-items: center;
         height: 6.2rem;

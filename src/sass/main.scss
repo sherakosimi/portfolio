@@ -3,7 +3,6 @@
 @import "components/button.scss";
 @import "sections/typing";
 @import "sections/header";
-@import "sections/projects";
 @import "sections/about";
 @import "sections/work";
 @import "sections/contact";
@@ -15,7 +14,8 @@
 @import "icons/fontawesome.scss";
 @import "icons/solid.scss";
 @import "icons/brands.scss";
-@import "components/project-popup";
+@import "components/project-popup.scss";
+@import "components/card.scss";
 @import "components/list.scss";
 @import "components/hamburger.scss";
 

@@ -25,23 +25,30 @@ const socialButtons = [
 export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "gmail",
-        "application_template",
-        e.target,
-        "user_Ra8roTJE5NBAXZq7eRSsY"
-      )
-      .then(
-        (result) => {
-          toast.success("Thank you for your message!");
-        },
-        (error) => {
-          toast.error(error.text);
-        }
-      );
-    e.target.reset();
+    if (
+      e.target.elements.name.value &&
+      e.target.elements.email.value &&
+      e.target.elements.subject.value
+    ) {
+      emailjs
+        .sendForm(
+          "gmail",
+          "application_template",
+          e.target,
+          "user_Ra8roTJE5NBAXZq7eRSsY"
+        )
+        .then(
+          (result) => {
+            toast.success("Thank you for your message!");
+          },
+          (error) => {
+            toast.error(error.text);
+          }
+        );
+      e.target.reset();
+    } else {
+      toast.error("Please fill out all fields");
+    }
   };
 
   const onClick = (url) => {

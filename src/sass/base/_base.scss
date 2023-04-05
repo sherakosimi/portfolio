@@ -56,6 +56,9 @@ body {
     box-sizing: border-box;
     font-family: Biotif-Medium;
     padding: 2rem;
+    @include respond(phone) {
+        padding: 0rem 2rem;
+    }
 }
 
 ::selection {
@@ -97,9 +100,12 @@ body {
         &--work {
             min-height: 62rem;
             flex-direction: column;
-            gap: 3rem;
             align-items: flex-start;
             gap: 0rem 10rem;
+            @include respond(tab-port-small) {
+                gap: 8rem;
+                margin: 0;
+            }
         }
 
         &--contact {
