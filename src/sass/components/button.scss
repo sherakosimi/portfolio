@@ -55,8 +55,7 @@
         text-transform: uppercase;
         padding-top: 0.5rem;
         @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
-        @include respond(tab-port-small) {
-            //811px
+        @include respond(tab-land) {
             margin-top: 7rem;
             transform: scale(1.5);
         }
@@ -125,7 +124,7 @@
         text-transform: uppercase;
         padding-top: 0.5rem;
         @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
-        @include respond(tab-port-small) {
+        @include respond(tab-land) {
             //811px
             margin-top: 10rem;
             transform: scale(1.2);

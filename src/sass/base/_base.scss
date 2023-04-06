@@ -37,15 +37,7 @@ html {
     }
     @include respond(tab-land) {
         //1109px
-        font-size: 35%;
-    }
-    @include respond(tab-port) {
-        //1000px
-        font-size: 30%;
-    }
-    @include respond(tab-port-small) {
-        //811px
-        font-size: 42%;
+        font-size: 45%;
     }
     @include respond(phone) {
         font-size: 36%;
@@ -56,8 +48,10 @@ body {
     box-sizing: border-box;
     font-family: Biotif-Medium;
     padding: 2rem;
-    @include respond(phone) {
-        padding: 0rem 2rem;
+    @include respond(tab-land) {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0rem;
     }
 }
 
@@ -72,13 +66,11 @@ body {
     justify-content: center;
     overflow: hidden;
 
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         padding: 7rem 2rem 1rem 2rem;
         overflow: visible;
     }
-    @include respond(phone) {
-        padding: 7rem 0rem 1rem 0rem;
-    }
+
     &--contact {
         padding-bottom: 10rem;
     }
@@ -95,16 +87,20 @@ body {
         @include container;
 
         &--about {
-            letter-spacing: 1px;
+            @include respond(tab-land) {
+                flex-direction: column;
+                margin: 12rem 0rem;
+                align-items: center;
+                gap: 30rem 20rem;
+            }
         }
         &--work {
             min-height: 62rem;
             flex-direction: column;
             align-items: flex-start;
             gap: 0rem 10rem;
-            @include respond(tab-port-small) {
-                gap: 8rem;
-                margin: 0;
+            @include respond(tab-land) {
+                gap: 15rem;
             }
         }
 

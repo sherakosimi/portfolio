@@ -6,12 +6,12 @@
     border: 0.3rem solid $border-color;
     padding: 3rem 4rem;
     position: relative;
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         margin-top: 25rem;
         transform: scale(1.4);
     }
     @include respond(phone) {
-        margin-top: 10rem;
+        margin-top: 25rem;
         transform: scale(1.2);
     }
     &__container {
@@ -20,7 +20,7 @@
         align-items: flex-start;
         gap: 2.5rem;
 
-        @include respond(tab-port-small) {
+        @include respond(tab-land) {
             align-items: center;
             text-align: center;
             margin-top: 12rem;
@@ -70,7 +70,7 @@
         flex-direction: column;
         align-items: inherit;
         gap: 1rem;
-        @include respond(tab-port-small) {
+        @include respond(tab-land) {
             gap: 2rem;
         }
 
@@ -156,8 +156,9 @@
 .intro {
     width: 50rem;
     padding: 3rem 4rem;
-    @include respond(tab-port-small) {
-        transform: scale(1.4);
+    @include respond(tab-land) {
+        padding: 5rem 4rem;
+        transform: scale(1.5);
     }
     &__heading {
         font-size: 3.9rem;
@@ -185,7 +186,8 @@
     padding: 3rem 4rem;
     @include neumorph(true, 1.8rem, 3.6rem, 4rem, #202428, #32363d);
     border: 0.3rem solid $border-color;
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
+        margin: 2rem 0rem;
         transform: scale(1.5);
     }
     &__container {
@@ -248,7 +250,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
 
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         top: -15%;
         left: 50%;
         transform: translate(-50%, -15%);

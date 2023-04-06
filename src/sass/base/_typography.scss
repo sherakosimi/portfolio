@@ -1,11 +1,11 @@
 .heading {
     align-self: flex-start;
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         //811px
         margin-top: 3rem;
         align-self: center;
         text-align: center;
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
 
     &__secondary {

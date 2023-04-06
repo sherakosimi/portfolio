@@ -1,6 +1,9 @@
 @import "base/variables";
 @import "base/mixins";
-@import "components/button.scss";
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
 @import "sections/typing";
 @import "sections/header";
 @import "sections/about";
@@ -8,12 +11,11 @@
 @import "sections/contact";
 @import "sections/footer";
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
 @import "icons/fontawesome.scss";
 @import "icons/solid.scss";
 @import "icons/brands.scss";
+
+@import "components/button.scss";
 @import "components/project-popup.scss";
 @import "components/card.scss";
 @import "components/list.scss";

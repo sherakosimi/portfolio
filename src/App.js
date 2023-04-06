@@ -5,7 +5,6 @@ import Projects from "./sections/Projects/Projects";
 import Work from "./sections/Work/Work";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact/Contact";
-import { toast, ToastContainer } from "react-toastify";
 
 function App() {
   return (

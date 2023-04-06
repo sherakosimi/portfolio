@@ -25,10 +25,10 @@
     &--4 {
         align-self: flex-start;
     }
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         align-self: center;
         margin: 0;
-        transform: scale(1.2);
+        transform: scale(1.7);
     }
     &:hover {
         max-height: 25rem;

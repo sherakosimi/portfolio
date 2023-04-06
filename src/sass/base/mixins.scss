@@ -29,6 +29,14 @@
     overflow: hidden;
     gap: 7rem;
     max-width: 173rem;
+
+    @include respond(tab-land) {
+        background: transparent;
+        box-shadow: none;
+        overflow: visible;
+        border: none;
+        border-radius: 0;
+    }
 }
 
 @mixin container {
@@ -37,12 +45,12 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    @include respond(tab-port-small) {
+    @include respond(tab-land) {
         //700px
-        margin: 12rem 0rem;
+        margin: 15rem 0rem;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30rem 20rem;
+        gap: 26rem 20rem;
     }
 }
 
@@ -50,16 +58,6 @@
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: $bp-phone) {
-            @content;
-        }
-    }
-    @if $breakpoint == tab-port-small {
-        @media (max-width: $bp-tab-port-small) {
-            @content;
-        }
-    }
-    @if $breakpoint == tab-port {
-        @media (max-width: $bp-tab-port) {
             @content;
         }
     }
