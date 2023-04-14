@@ -33,13 +33,19 @@
     }
 
     &__close {
+        &,
         &:link,
         &:visited {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
             position: absolute;
             right: 0;
             justify-self: end;
             color: $color-white;
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
         &:hover {
             color: $secondary-color;

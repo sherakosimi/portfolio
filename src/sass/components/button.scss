@@ -28,7 +28,11 @@
 
     &--social {
         @include btn(4rem, 4rem, 2.4rem, $color-white);
-        padding-top: 0.2rem;
+
+        @include respond(tab-land) {
+            transform: scale(1.2);
+            padding: 0;
+        }
     }
 
     &--work {

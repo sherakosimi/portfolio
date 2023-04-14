@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import screen from "../../img/lifetrackrReminder.png";
 import screen2 from "../../img/lifetrackrSignUp.png";
 import { overview } from "./ProjectsData";
 export default function ProjectPage(props) {
-  const id = props.id;
+  const [id, setID] = useState(props.id);
+
+  useEffect(() => {
+    setID(props.id);
+  }, [props.id]);
+
   const onClick = () => {
-    props.setProjectID(null);
+    setID(null);
   };
 
   if (id == null) {
@@ -36,9 +41,9 @@ export default function ProjectPage(props) {
                 Source Code
               </a>
             </div>
-            <a href="x" onClick={onClick} className="popup__close">
+            <button onClick={onClick} className="popup__close">
               <i className="fa-solid fa-xmark"></i>
-            </a>
+            </button>
           </div>
           <div className="popup__container">
             <div className="popup__info">
@@ -50,7 +55,7 @@ export default function ProjectPage(props) {
                 ))}
               </div>
               <div>
-                {/* <h3 className="popup__functionality">Tech:</h3>
+                <h3 className="popup__functionality">Tech:</h3>
                 <div className="popup__cover">
                   <ul className="list">
                     <li className="list__item">
@@ -108,7 +113,7 @@ export default function ProjectPage(props) {
                       </span>
                     </li>
                   </ul>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

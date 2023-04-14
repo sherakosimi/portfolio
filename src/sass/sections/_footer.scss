@@ -12,6 +12,10 @@
         justify-content: space-between;
         @include neumorph(false, 2.2rem, 4.6rem, 2.5rem, $box-shadow-one, $box-shadow-two);
         flex-wrap: wrap;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     &__name {

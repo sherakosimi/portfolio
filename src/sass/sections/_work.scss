@@ -1,6 +1,6 @@
 .work {
     flex: 1 1 38rem;
-    min-width: 38rem;
+    width: 38rem;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 2.5rem;
@@ -36,9 +36,10 @@
     }
 
     &__experience {
+        width: 100%;
+
         display: flex;
         justify-content: space-between;
-
         align-items: flex-end;
         &--company {
             font-family: $font-bold;
@@ -108,9 +109,9 @@
         -webkit-columns: 2;
         -moz-columns: 2;
         font-size: 1.6rem;
-        column-gap: 7%;
 
         &--item {
+            width: 15rem;
             color: $color-white;
             margin-bottom: 0.5rem;
 
@@ -119,6 +120,9 @@
                 color: $secondary-color;
                 padding-right: 1rem;
             }
+        }
+        @include respond(tab-land) {
+            font-size: 1.8rem;
         }
     }
 }

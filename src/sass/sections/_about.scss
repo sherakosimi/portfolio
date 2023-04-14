@@ -11,7 +11,7 @@
         transform: scale(1.4);
     }
     @include respond(phone) {
-        margin-top: 25rem;
+        margin-top: 15rem;
         transform: scale(1.2);
     }
     &__container {

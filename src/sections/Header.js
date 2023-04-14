@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import mainPhoto from "../img/portrait.JPG";
 
 export default function Header() {
+  const [hambActive, sethambActive] = useState(false);
+
+  const onClickSocial = (url) => {
+    window.open(url, "_blank");
+  };
+
+  const onClickHamburger = () => {
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.classList.toggle("is-active");
+  };
+
   return (
     <header className="header">
       <nav className="navbar">
         <div className="navbar__hamburger">
-          <button class="hamburger hamburger--collapse" type="button">
+          <button
+            className="hamburger hamburger--collapse"
+            type="button"
+            onClick={() => onClickHamburger()}
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -41,24 +56,22 @@ export default function Header() {
         </div>
         <div className="social">
           <div className="social__container">
-            <a
-              role="button"
-              rel="noreferrer noopener"
-              target="_blank"
-              href="https://github.com/sherakosimi"
+            <button
               className="btn btn--social"
+              onClick={() => onClickSocial("https://github.com/sherakosimi")}
             >
               <i className="bx bxl-github bx-tada-hover"></i>
-            </a>
-            <a
-              role="button"
-              rel="noreferrer noopener"
-              target="_blank"
-              href="https://www.linkedin.com/in/shermukhammad-kosimi/"
+            </button>
+            <button
+              onClick={() =>
+                onClickSocial(
+                  "https://www.linkedin.com/in/shermukhammad-kosimi/"
+                )
+              }
               className="btn btn--social"
             >
               <i className="bx bxl-linkedin bx-tada-hover"></i>
-            </a>
+            </button>
           </div>
         </div>
       </nav>

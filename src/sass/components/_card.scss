@@ -53,6 +53,11 @@
             opacity: 0;
             height: 0;
         }
+
+        @include respond(tab-land) {
+            font-size: 1.4rem;
+            text-align: center;
+        }
     }
 
     &:hover &__description--front {
@@ -74,6 +79,10 @@
         text-align: start;
         list-style: none;
         font-size: 1.4rem;
+        @include respond(tab-land) {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+        }
     }
 
     &__item {
@@ -170,6 +179,9 @@
             font-size: 2.9rem;
             color: rgb(205, 204, 204);
             font-family: $font-bold;
+            @include respond(tab-land) {
+                font-size: 3rem;
+            }
         }
 
         &--platform {
@@ -177,6 +189,11 @@
             color: rgb(175, 175, 175);
             font-family: $font-light;
             text-transform: uppercase;
+
+            @include respond(tab-land) {
+                margin-top: 1rem;
+                font-size: 1.7rem;
+            }
         }
     }
 

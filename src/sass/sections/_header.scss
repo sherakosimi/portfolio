@@ -25,16 +25,21 @@
     padding: 0 3rem;
     transition: all 0.4s ease;
 
+    @include respond(tab-land) {
+        width: 90%;
+    }
+
     &:hover {
         border: 2px solid #22242a;
     }
 
     &__hamburger {
-        font-size: 1rem;
         flex: 1;
         display: none;
         @include respond(tab-land) {
-            display: inline;
+            display: flex;
+            align-items: center;
+            transform: scale(0.96);
         }
     }
 }
@@ -243,17 +248,13 @@
         justify-content: center;
         align-items: center;
         @include neumorph(false, 3.8rem, 7.7rem, 4rem, $box-shadow-one, $box-shadow-two);
-        transition: all 0.3s ease-in-out;
+
         @include respond(tab-land) {
             transform: scale(1.3);
             margin: 9rem 0;
         }
         @include respond(phone) {
             transform: scale(1.2);
-        }
-        &:hover {
-            transform: scale(1) translateY(-0.2rem) translateX(-0.2rem);
-            box-shadow: inset 3.8rem 3.8rem 7.7rem $box-shadow-one, inset -3.8rem -3.8rem 7.7rem $box-shadow-two;
         }
 
         &--picture {
