@@ -1,5 +1,5 @@
 import React from "react";
-import glasses from "../img/photoshoot.PNG";
+import glasses from "../../img/photoshoot.PNG";
 
 const socialButtons = [
   {

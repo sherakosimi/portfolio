@@ -3,13 +3,14 @@
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
+@import "base/navigation";
 
-@import "sections/typing";
-@import "sections/header";
-@import "sections/about";
-@import "sections/work";
-@import "sections/contact";
-@import "sections/footer";
+@import "layout/typing";
+@import "layout/header";
+@import "layout/about";
+@import "layout/work";
+@import "layout/contact";
+@import "layout/footer";
 
 @import "icons/fontawesome.scss";
 @import "icons/solid.scss";

@@ -26,21 +26,11 @@
     transition: all 0.4s ease;
 
     @include respond(tab-land) {
-        width: 90%;
+        display: none;
     }
 
     &:hover {
         border: 2px solid #22242a;
-    }
-
-    &__hamburger {
-        flex: 1;
-        display: none;
-        @include respond(tab-land) {
-            display: flex;
-            align-items: center;
-            transform: scale(0.96);
-        }
     }
 }
 
@@ -51,11 +41,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     font-family: $font-regular;
-    @include respond(tab-land) {
-        display: none;
-    }
 
     &__item {
         display: flex;
@@ -159,21 +145,26 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    @include respond(tab-land) {
+        display: none;
+    }
 }
 
 .hero {
     flex: 1;
-    z-index: 100;
-    padding: 20rem 23rem;
+    z-index: 50;
+    padding: 10rem 23rem;
+    padding-top: 23rem;
     display: flex;
     align-items: center;
 
     @include respond(tab-land) {
-        //700px
         flex-direction: column-reverse;
         align-items: center;
         gap: 8rem;
-        padding: 20rem 0rem;
+        padding: 3rem 0rem;
+        padding-bottom: 12rem;
     }
     &__intro {
         flex-basis: 1;
@@ -187,7 +178,6 @@
         animation-timing-function: ease-out;
 
         @include respond(tab-land) {
-            //700px
             align-items: center;
             text-align: center;
         }
@@ -209,7 +199,6 @@
         -moz-user-select: none;
         white-space: nowrap;
         @include respond(tab-land) {
-            //700px
             font-size: 12rem;
         }
         @include respond(phone) {
