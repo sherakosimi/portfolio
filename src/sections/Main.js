@@ -6,7 +6,7 @@ import Contact from "./Contact/Contact";
 
 function Main() {
   return (
-    <main>
+    <main className="main">
       <Projects />
       <Work />
       <About />

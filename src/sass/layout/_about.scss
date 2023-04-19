@@ -8,9 +8,9 @@
     position: relative;
 
     @include respond(tab-land) {
-        width: 47rem;
-        margin-top: 50rem;
-        transform: scale(2);
+        width: 42rem;
+        margin-top: 35rem;
+        transform: scale(1.8);
         box-shadow: none;
         background: transparent;
         border: none;
@@ -159,11 +159,17 @@
 .intro {
     width: 50rem;
     padding: 3rem 4rem;
+    overflow: hidden;
     @include respond(tab-land) {
-        width: 43rem;
-        margin-top: 50rem;
-        padding: 5rem 0rem;
-        transform: scale(2.2);
+        width: 42rem;
+        margin-top: 35rem;
+        padding: 5rem 2rem;
+        transform: scale(2);
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        transform: scale(1.8);
     }
     &__heading {
         font-size: 3.9rem;
@@ -182,6 +188,13 @@
         & > span {
             color: $tertiary-color;
             font-family: $font-bold;
+            @include respond(tab-land) {
+                display: block;
+            }
+        }
+        @include respond(tab-land) {
+            margin-top: 3rem;
+            text-align: center;
         }
     }
 }
@@ -192,15 +205,18 @@
     @include neumorph(true, 1.8rem, 3.6rem, 4rem, #202428, #32363d);
     border: 0.3rem solid $border-color;
     @include respond(tab-land) {
-        width: 43rem;
-        margin-top: 40rem;
+        width: 42rem;
+        margin-top: 30rem;
         margin-bottom: 20rem;
         box-shadow: none;
-        transform: scale(2.2);
-        padding: 3rem 0rem;
+        transform: scale(2);
         background: transparent;
         border-radius: 0;
         border: none;
+        text-align: center;
+    }
+    @include respond(phone) {
+        transform: scale(1.8);
     }
 
     &__container {

@@ -51,11 +51,6 @@ body {
     box-sizing: border-box;
     font-family: Biotif-Medium;
     padding: 2rem;
-    @include respond(tab-land) {
-        display: flex;
-        align-items: center;
-        padding: 2rem 0rem;
-    }
 }
 
 ::selection {
@@ -63,6 +58,15 @@ body {
     color: black;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    @include respond(phone) {
+        align-items: center;
+    }
+}
 .section {
     padding: 13rem 7rem 1rem 7rem;
     display: flex;
@@ -91,10 +95,9 @@ body {
 
         &--about {
             @include respond(tab-land) {
+                max-width: 100%;
                 flex-direction: column;
-                margin: 12rem 0rem;
                 align-items: center;
-                gap: 30rem 20rem;
             }
         }
         &--work {
