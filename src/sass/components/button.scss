@@ -61,7 +61,7 @@
         @include neumorph(false, 15px, 22px, 50px, #1b1e21, #373c43);
         @include respond(tab-land) {
             margin-top: 7rem;
-            transform: scale(1.5);
+            transform: scale(1.8);
         }
         &::before {
             content: "";
@@ -150,6 +150,7 @@
             color: $primary-color;
             border: 2px solid $primary-color;
         }
+
         &:hover::before {
             width: 18rem;
         }
@@ -160,9 +161,10 @@
             display: flex;
             align-items: center;
             transition: 0.5s ease;
-        }
-        &:hover span {
-            animation: advanceIcon 1.5s infinite;
+
+            &:hover {
+                animation: advanceIcon 1.5s infinite;
+            }
         }
     }
 }

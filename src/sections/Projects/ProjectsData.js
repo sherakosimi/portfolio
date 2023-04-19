@@ -227,6 +227,14 @@ const EthWallet = {
 
   techStack: [
     {
+      nameFront: "Firebase",
+      nameBack: "Custom Components",
+      iconFront: <i className="bx bxl-firebase" style={{ color: "#FFA000" }} />,
+      iconBack: (
+        <i className="fa-solid fa-sitemap fa-xs" style={{ color: "#719C82" }} />
+      ),
+    },
+    {
       nameFront: "React JS",
       nameBack: "Responsive Design",
       iconFront: (
@@ -254,14 +262,7 @@ const EthWallet = {
       iconFront: <i className="bx bxl-sass" style={{ color: "#CD6773" }} />,
       iconBack: <i className="bx bx-cloud" style={{ color: "#719C82" }} />,
     },
-    {
-      nameFront: "Firebase",
-      nameBack: "Custom Components",
-      iconFront: <i className="bx bxl-firebase" style={{ color: "#CD6773" }} />,
-      iconBack: (
-        <i className="fa-solid fa-sitemap fa-xs" style={{ color: "#719C82" }} />
-      ),
-    },
+
     {
       nameFront: "Figma",
       nameBack: "Cyber UI Style",
@@ -322,6 +323,12 @@ const WorkFlow = {
 
   techStack: [
     {
+      nameFront: "Redux Thunk",
+      nameBack: "Firebase Auth",
+      iconFront: <i className="bx bxl-redux" style={{ color: "#04C3FF" }} />,
+      iconBack: <i className="bx bx-lock-alt" style={{ color: "#719C82" }} />,
+    },
+    {
       nameFront: "React Native",
       nameBack: "Cloud Database",
       iconFront: (
@@ -337,12 +344,6 @@ const WorkFlow = {
       iconBack: (
         <i className="fa-solid fa-glasses fa-xs" style={{ color: "#719C82" }} />
       ),
-    },
-    {
-      nameFront: "Redux Thunk",
-      nameBack: "Firebase Auth",
-      iconFront: <i className="bx bxl-redux" style={{ color: "#04C3FF" }} />,
-      iconBack: <i className="bx bx-lock-alt" style={{ color: "#719C82" }} />,
     },
     {
       nameFront: "Figma",
@@ -409,6 +410,12 @@ const Portfolio = {
 
   techStack: [
     {
+      nameFront: "REST API",
+      nameBack: "Fast Loading Speed",
+      iconFront: <i className="bx bx-cloud" style={{ color: "#17CC8B" }} />,
+      iconBack: <i className="bx bx-timer" style={{ color: "#719C82" }} />,
+    },
+    {
       nameFront: "React JS",
       nameBack: "Responsive Design",
       iconFront: (
@@ -456,12 +463,6 @@ const Portfolio = {
         <i className="fa-brands fa-figma fa-sm" style={{ color: "#A303DC" }} />
       ),
 
-      iconBack: <i className="bx bx-timer" style={{ color: "#719C82" }} />,
-    },
-    {
-      nameFront: "REST API",
-      nameBack: "Fast Loading Speed",
-      iconFront: <i className="bx bx-cloud" style={{ color: "#17CC8B" }} />,
       iconBack: <i className="bx bx-timer" style={{ color: "#719C82" }} />,
     },
   ],

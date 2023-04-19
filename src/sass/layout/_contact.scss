@@ -7,10 +7,6 @@
         transform: scale(1.4);
     }
 
-    @include respond(phone) {
-        transform: scale(1.2);
-    }
-
     &__side {
         flex: 1;
         display: flex;
@@ -42,6 +38,11 @@
             @include respond(tab-land) {
                 border-radius: 0rem 0 4rem 4rem;
             }
+            @include respond(phone) {
+                border: none;
+                box-shadow: non;
+                background: transparent;
+            }
         }
     }
 
@@ -61,8 +62,12 @@
         position: relative;
         padding: 0 1.3rem;
         padding-top: 0.5rem;
+        z-index: 100;
         @include neumorph(true, 0.5rem, 0.8rem, 1rem, #202327, #32373d);
-
+        @include respond(phone) {
+            height: 6rem;
+            padding-top: 0rem;
+        }
         &:nth-child(3) {
             padding-top: 1.2rem;
             height: 10rem;

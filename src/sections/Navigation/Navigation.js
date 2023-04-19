@@ -4,8 +4,8 @@ import { HashLink } from "react-router-hash-link";
 export default function Navigation() {
   const onClickHamburger = () => {
     //Toggle Active
-    document.querySelector(".hamburger").classList.toggle("is-active");
     document.querySelector(".navigation").classList.toggle("is-active");
+    document.querySelector(".hamburger").classList.toggle("is-active");
   };
 
   const onClickSocial = (url) => {

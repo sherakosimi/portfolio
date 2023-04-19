@@ -56,6 +56,11 @@
 
 /// MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {
+    @if $breakpoint == small-phone {
+        @media (max-width: $bp-small-phone) {
+            @content;
+        }
+    }
     @if $breakpoint == phone {
         @media (max-width: $bp-phone) {
             @content;

@@ -22,10 +22,10 @@ export default function Projects() {
             <div className="card" key={i}>
               <div className="card__top" id="web">
                 <h3 className="card__description card__description--front">
-                  {project.caseName}
+                  Features Overview
                 </h3>
                 <h3 className="card__description card__description--back">
-                  Features Overview
+                  {project.caseName}
                 </h3>
                 <ul className="card__list">
                   {project.techStack.map((item, k) => (

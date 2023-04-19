@@ -6,14 +6,17 @@
     border: 0.3rem solid $border-color;
     padding: 3rem 4rem;
     position: relative;
+
     @include respond(tab-land) {
-        margin-top: 25rem;
-        transform: scale(1.4);
+        width: 47rem;
+        margin-top: 50rem;
+        transform: scale(2);
+        box-shadow: none;
+        background: transparent;
+        border: none;
+        padding: 3rem 0;
     }
-    @include respond(phone) {
-        margin-top: 15rem;
-        transform: scale(1.2);
-    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -23,7 +26,7 @@
         @include respond(tab-land) {
             align-items: center;
             text-align: center;
-            margin-top: 12rem;
+            margin-top: 22rem;
         }
     }
 
@@ -157,8 +160,10 @@
     width: 50rem;
     padding: 3rem 4rem;
     @include respond(tab-land) {
-        padding: 5rem 4rem;
-        transform: scale(1.5);
+        width: 43rem;
+        margin-top: 50rem;
+        padding: 5rem 0rem;
+        transform: scale(2.2);
     }
     &__heading {
         font-size: 3.9rem;
@@ -182,14 +187,22 @@
 }
 
 .skills {
-    width: 45em;
+    width: 43rem;
     padding: 3rem 4rem;
     @include neumorph(true, 1.8rem, 3.6rem, 4rem, #202428, #32363d);
     border: 0.3rem solid $border-color;
     @include respond(tab-land) {
-        margin: 2rem 0rem;
-        transform: scale(1.5);
+        width: 43rem;
+        margin-top: 40rem;
+        margin-bottom: 20rem;
+        box-shadow: none;
+        transform: scale(2.2);
+        padding: 3rem 0rem;
+        background: transparent;
+        border-radius: 0;
+        border: none;
     }
+
     &__container {
         margin-top: 2rem;
         display: flex;
@@ -233,43 +246,5 @@
                 font-size: 2.4rem;
             }
         }
-    }
-}
-
-.circle {
-    height: 27rem;
-    width: 27rem;
-    padding: 2rem 2rem;
-    position: absolute;
-    left: 33rem;
-    top: -8rem;
-    border-radius: 20rem;
-    background: linear-gradient(230deg, #1f2225, #373c43);
-    box-shadow: -2rem 2rem 4rem #1e2024, 1.6rem -1.6rem 3rem #2f353a;
-    border: 0.2rem solid $border-color;
-    overflow: hidden;
-    transition: all 0.3s ease;
-
-    @include respond(tab-land) {
-        top: -15%;
-        left: 50%;
-        transform: translate(-50%, -15%);
-    }
-
-    &__photo {
-        height: 100%;
-        width: 100%;
-        border-radius: 20rem;
-        border: 0.3rem solid $border-color;
-        overflow: hidden;
-        transition: all 0.3s ease;
-        &:hover {
-            transform: scale(1.3);
-        }
-    }
-    &__img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
     }
 }
